@@ -4,7 +4,7 @@
   "description": "Tourism website with multi-language support",
   "scripts": {
     "prebuild": "rm -f static/css/style.css",
-    "build": "tailwindcss -i ./static/src/input.css -o ./static/css/style.css --minify",
+    "build": "npx tailwindcss -i ./static/src/input.css -o ./static/css/style.css --minify",
     "watch": "tailwindcss -i ./static/src/input.css -o ./static/css/style.css --watch",
     "build-css": "tailwindcss -i ./static/src/input.css -o ./static/css/main.css --watch",
     "copy-alpine": "copy node_modules\\\\alpinejs\\\\dist\\\\cdn.min.js static\\\\js\\\\vendor\\\\alpine.min.js"
