@@ -1,10 +1,10 @@
+gunicorn
 asgiref==3.8.1
 certifi==2025.1.31
 cffi==1.17.1
 charset-normalizer==3.4.1
 cryptography==44.0.2
 Django==5.2
-gunicorn
 django-allauth==65.7.0
 django-ckeditor==6.7.2
 django-ckeditor-5==0.2.17
