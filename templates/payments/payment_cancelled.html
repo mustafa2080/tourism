@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% load i18n %}
+
+{% block title %}{% trans "Payment Cancelled" %} - {% trans "Tourism Project" %}{% endblock title %}
+
+{% block content %}
+<div class="container mx-auto px-4 py-16 text-center max-w-lg">
+    <div class="bg-white p-8 rounded-lg shadow-md">
+         <div class="text-red-500 mb-4">
+            {# Cancel/Fail Icon #}
+            <svg class="w-16 h-16 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+        </div>
+        <h1 class="text-2xl font-bold mb-3">{% trans "Payment Cancelled or Failed" %}</h1>
+        <p class="text-gray-600 mb-6">{% trans "Your payment was not completed. Your booking status remains pending." %}</p>
+        
+        <a href="{% url 'user_dashboard' %}" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-6 rounded mr-2">
+            {% trans "Go to Dashboard" %}
+        </a>
+         {# Add link back to booking/payment page if applicable #}
+         {# <a href="{% url 'booking:booking_detail' pk=booking.id %}" class="text-blue-600 hover:underline">
+            {% trans "View Booking" %}
+         </a> #}
+    </div>
+</div>
+{% endblock content %}

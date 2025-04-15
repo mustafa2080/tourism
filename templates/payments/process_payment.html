@@ -1,0 +1,70 @@
+{% extends "base.html" %}
+{% load i18n %}
+
+{% block title %}{% trans "Process Payment" %} - {% trans "Tourism Project" %}{% endblock title %}
+
+{% block content %}
+<div class="container mx-auto px-4 py-8 max-w-lg">
+    <h1 class="text-2xl md:text-3xl font-bold mb-6 text-center">{% trans "Complete Your Payment" %}</h1>
+
+    {# Booking Summary #}
+    <div class="mb-6 p-4 bg-gray-100 rounded border">
+        <h2 class="text-lg font-semibold mb-2">{% trans "Booking Summary" %}</h2>
+        <dl class="space-y-1 text-sm">
+            <div class="flex justify-between">
+                <dt class="text-gray-600">{% trans "Booking ID" %}:</dt>
+                <dd class="font-medium">#{{ booking.id }}</dd>
+            </div>
+            <div class="flex justify-between">
+                <dt class="text-gray-600">{% trans "Tour" %}:</dt>
+                <dd class="font-medium">{{ booking.tour.name }}</dd>
+            </div>
+             <div class="flex justify-between">
+                <dt class="text-gray-600">{% trans "Date" %}:</dt>
+                <dd class="font-medium">{{ booking.start_date|date:"d M Y" }}</dd>
+            </div>
+            <div class="flex justify-between text-base font-semibold border-t pt-2 mt-2">
+                <dt>{% trans "Total Amount" %}:</dt>
+                <dd>{{ booking.total_price|floatformat:2 }} {{ booking.tour.currency.symbol }}</dd>
+            </div>
+        </dl>
+    </div>
+
+    {# Payment Method Selection #}
+    <form method="post" class="bg-white p-6 rounded-lg shadow-md">
+        {% csrf_token %}
+        <h2 class="text-lg font-semibold mb-4">{% trans "Select Payment Method" %}</h2>
+        
+        {# Render PaymentMethodForm radio buttons #}
+        <div class="space-y-3">
+            {% for radio in form.payment_method %}
+            <label for="{{ radio.id_for_label }}" class="flex items-center p-3 border rounded-md hover:border-blue-500 cursor-pointer has-[:checked]:bg-blue-50 has-[:checked]:border-blue-500">
+                {{ radio.tag }} {# Renders <input type="radio"> #}
+                <span class="ml-3 font-medium">{{ radio.choice_label }}</span>
+                 {# Add icons - Example #}
+                 {% if radio.choice_value == 'stripe' %} <i class="fab fa-cc-stripe fa-lg ml-auto text-indigo-600"></i> {% endif %}
+                 {% if radio.choice_value == 'paypal' %} <i class="fab fa-paypal fa-lg ml-auto text-blue-600"></i> {% endif %}
+            </label>
+            {% endfor %}
+        </div>
+        {% if form.payment_method.errors %}
+            <p class="text-red-500 text-xs mt-2">{{ form.payment_method.errors|first }}</p>
+        {% endif %}
+
+        <div class="mt-6">
+            <button type="submit" class="w-full bg-green-600 hover:bg-green-700 text-white font-bold py-3 px-4 rounded focus:outline-none focus:shadow-outline">
+                {% trans "Proceed to Secure Payment" %}
+            </button>
+        </div>
+    </form>
+
+    {# Include Stripe JS if using Stripe Elements directly (not needed for Checkout redirect) #}
+    {# {% block extra_scripts %}
+        <script src="https://js.stripe.com/v3/"></script>
+        <script>
+            const stripe = Stripe('{{ STRIPE_PUBLIC_KEY }}');
+            // Stripe Elements setup code here...
+        </script>
+    {% endblock extra_scripts %} #}
+</div>
+{% endblock content %}

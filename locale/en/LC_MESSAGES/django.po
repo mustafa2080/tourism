@@ -1,0 +1,207 @@
+# Tourism Project English Translation
+# Copyright (C) 2025
+msgid ""
+msgstr ""
+"Project-Id-Version: Tourism Project 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-04-05 12:00+0200\n"
+"PO-Revision-Date: 2025-04-05 12:00+0200\n"
+"Last-Translator: \n"
+"Language-Team: English\n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+msgid "Tourism Website"
+msgstr "Tourism Website"
+
+msgid "Home"
+msgstr "Home"
+
+msgid "Tours"
+msgstr "Tours"
+
+msgid "Blog"
+msgstr "Blog"
+
+msgid "Contact"
+msgstr "Contact"
+
+msgid "Login"
+msgstr "Login"
+
+msgid "Register"
+msgstr "Register"
+
+msgid "My Profile"
+msgstr "My Profile"
+
+msgid "My Bookings"
+msgstr "My Bookings"
+
+msgid "Admin Panel"
+msgstr "Admin Panel"
+
+msgid "Logout"
+msgstr "Logout"
+
+msgid "About Us"
+msgstr "About Us"
+
+msgid "We offer the best tourism experience with unforgettable memories."
+msgstr "We offer the best tourism experience with unforgettable memories."
+
+msgid "Quick Links"
+msgstr "Quick Links"
+
+msgid "Subscribe"
+msgstr "Subscribe"
+
+msgid "Get the latest news and updates"
+msgstr "Get the latest news and updates"
+
+msgid "Your Email"
+msgstr "Your Email"
+
+msgid "Tourism Website. All rights reserved."
+msgstr "Tourism Website. All rights reserved."
+
+msgid "Select language"
+msgstr "Select language"
+
+msgid "Open main menu"
+msgstr "Open main menu"
+
+msgid "Close"
+msgstr "Close"
+
+msgid "Search"
+msgstr "Search"
+
+msgid "Search for tours, destinations..."
+msgstr "Search for tours, destinations..."
+
+msgid "Popular Destinations"
+msgstr "Popular Destinations"
+
+msgid "Featured Tours"
+msgstr "Featured Tours"
+
+msgid "View Details"
+msgstr "View Details"
+
+msgid "Book Now"
+msgstr "Book Now"
+
+msgid "Latest Blog Posts"
+msgstr "Latest Blog Posts"
+
+msgid "Read More"
+msgstr "Read More"
+
+msgid "View All"
+msgstr "View All"
+
+msgid "Arabic"
+msgstr "Arabic"
+
+msgid "English"
+msgstr "English"
+
+msgid "French"
+msgstr "French"
+
+msgid "German"
+msgstr "German"
+
+msgid "Price"
+msgstr "Price"
+
+msgid "Duration"
+msgstr "Duration"
+
+msgid "Group Size"
+msgstr "Group Size"
+
+msgid "Reviews"
+msgstr "Reviews"
+
+msgid "Tour Details"
+msgstr "Tour Details"
+
+msgid "Itinerary"
+msgstr "Itinerary"
+
+msgid "Inclusions"
+msgstr "Inclusions"
+
+msgid "Exclusions"
+msgstr "Exclusions"
+
+msgid "Additional Information"
+msgstr "Additional Information"
+
+msgid "Related Tours"
+msgstr "Related Tours"
+
+msgid "From"
+msgstr "From"
+
+msgid "Start Date"
+msgstr "Start Date"
+
+msgid "End Date"
+msgstr "End Date"
+
+msgid "Guests"
+msgstr "Guests"
+
+msgid "Adult"
+msgstr "Adult"
+
+msgid "Child"
+msgstr "Child"
+
+msgid "Total"
+msgstr "Total"
+
+msgid "Booking Confirmation"
+msgstr "Booking Confirmation"
+
+msgid "Booking Details"
+msgstr "Booking Details"
+
+msgid "Payment Information"
+msgstr "Payment Information"
+
+msgid "Card Number"
+msgstr "Card Number"
+
+msgid "Expiry Date"
+msgstr "Expiry Date"
+
+msgid "CVV"
+msgstr "CVV"
+
+msgid "Pay Now"
+msgstr "Pay Now"
+
+msgid "Tour Guide"
+msgstr "Tour Guide"
+
+msgid "Languages"
+msgstr "Languages"
+
+msgid "Experience"
+msgstr "Experience"
+
+msgid "years"
+msgstr "years"
+
+msgid "days"
+msgstr "days"
+
+msgid "per person"
+msgstr "per person"

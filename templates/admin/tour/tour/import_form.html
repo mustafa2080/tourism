@@ -1,0 +1,325 @@
+{% extends "admin/base_site.html" %}
+{% load i18n admin_urls static %}
+
+{% block extrahead %}
+    {{ block.super }}
+    <style>
+        .import-form {
+            margin: 20px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+        }
+        .import-form .form-row {
+            margin-bottom: 15px;
+        }
+        .import-form label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        .import-form .help-text {
+            color: #666;
+            font-size: 0.9em;
+            margin-top: 5px;
+        }
+        .import-form .submit-row {
+            margin-top: 20px;
+        }
+        .import-form .submit-row input {
+            padding: 10px 15px;
+        }
+        .import-instructions {
+            margin-bottom: 20px;
+        }
+        .tab-content {
+            display: none;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-top: none;
+        }
+        .tab-content.active {
+            display: block;
+        }
+        .tabs {
+            display: flex;
+            margin-bottom: 0;
+            border-bottom: 1px solid #ddd;
+        }
+        .tab {
+            padding: 10px 15px;
+            cursor: pointer;
+            background-color: #f1f1f1;
+            border: 1px solid #ddd;
+            border-bottom: none;
+            margin-right: 5px;
+            border-radius: 5px 5px 0 0;
+        }
+        .tab.active {
+            background-color: white;
+            border-bottom-color: white;
+        }
+        .required {
+            color: #e74c3c;
+            font-weight: bold;
+        }
+        .sample-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+            font-size: 0.9em;
+        }
+        .sample-table th, .sample-table td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        .sample-table th {
+            background-color: #f2f2f2;
+        }
+        .sample-table tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        .download-sample {
+            margin-top: 15px;
+            margin-bottom: 20px;
+        }
+        .download-sample a {
+            display: inline-block;
+            padding: 8px 15px;
+            background-color: #4CAF50;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+        }
+        .download-sample a:hover {
+            background-color: #45a049;
+        }
+        .checkbox-row {
+            margin-bottom: 10px;
+        }
+        .checkbox-row input {
+            margin-right: 10px;
+        }
+    </style>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const tabs = document.querySelectorAll('.tab');
+            const tabContents = document.querySelectorAll('.tab-content');
+            
+            tabs.forEach(tab => {
+                tab.addEventListener('click', () => {
+                    // Remove active class from all tabs and contents
+                    tabs.forEach(t => t.classList.remove('active'));
+                    tabContents.forEach(content => content.classList.remove('active'));
+                    
+                    // Add active class to clicked tab and corresponding content
+                    tab.classList.add('active');
+                    const tabId = tab.getAttribute('data-tab');
+                    document.getElementById(tabId).classList.add('active');
+                });
+            });
+            
+            // Set first tab as active by default
+            if (tabs.length > 0) {
+                tabs[0].click();
+            }
+        });
+    </script>
+{% endblock %}
+
+{% block breadcrumbs %}
+<div class="breadcrumbs">
+    <a href="{% url 'admin:index' %}">{% trans 'Home' %}</a>
+    &rsaquo; <a href="{% url 'admin:app_list' app_label=opts.app_label %}">{{ opts.app_config.verbose_name }}</a>
+    &rsaquo; <a href="{% url 'admin:tour_tour_changelist' %}">{{ opts.verbose_name_plural|capfirst }}</a>
+    &rsaquo; {% trans 'Import Tours' %}
+</div>
+{% endblock %}
+
+{% block content %}
+<div id="content-main">
+    <div class="import-form">
+        <h1>{% trans "Import Tours from Excel/CSV" %}</h1>
+        
+        <div class="download-sample">
+            <a href="{% url 'admin:download_sample_file' %}">{% trans "Download Sample Excel File" %}</a>
+        </div>
+        
+        <div class="tabs">
+            <div class="tab active" data-tab="tab-tours">{% trans "Tours" %}</div>
+            <div class="tab" data-tab="tab-itinerary">{% trans "Itinerary" %}</div>
+            <div class="tab" data-tab="tab-faqs">{% trans "FAQs" %}</div>
+            <div class="tab" data-tab="tab-format">{% trans "File Format" %}</div>
+        </div>
+        
+        <div class="import-instructions">
+            <div id="tab-tours" class="tab-content active">
+                <h2>{% trans "Tour Fields" %}</h2>
+                <p>{% trans "The following fields are required or optional for each tour:" %}</p>
+                <ul>
+                    <li><strong>name_en</strong> <span class="required">*</span> - {% trans "Tour name in English (required)" %}</li>
+                    <li><strong>name_ar</strong> - {% trans "Tour name in Arabic" %}</li>
+                    <li><strong>name_fr</strong> - {% trans "Tour name in French" %}</li>
+                    <li><strong>name_de</strong> - {% trans "Tour name in German" %}</li>
+                    <li><strong>slug</strong> - {% trans "URL slug (will be auto-generated from name_en if empty)" %}</li>
+                    <li><strong>description_en</strong> <span class="required">*</span> - {% trans "Full description in English" %}</li>
+                    <li><strong>description_ar</strong> - {% trans "Full description in Arabic" %}</li>
+                    <li><strong>description_fr</strong> - {% trans "Full description in French" %}</li>
+                    <li><strong>description_de</strong> - {% trans "Full description in German" %}</li>
+                    <li><strong>short_description_en</strong> <span class="required">*</span> - {% trans "Short description in English" %}</li>
+                    <li><strong>short_description_ar</strong> - {% trans "Short description in Arabic" %}</li>
+                    <li><strong>short_description_fr</strong> - {% trans "Short description in French" %}</li>
+                    <li><strong>short_description_de</strong> - {% trans "Short description in German" %}</li>
+                    <li><strong>destination</strong> <span class="required">*</span> - {% trans "Destination name (must exist in database)" %}</li>
+                    <li><strong>categories</strong> - {% trans "Categories (comma-separated, will be created if not exist)" %}</li>
+                    <li><strong>price</strong> - {% trans "Tour price" %}</li>
+                    <li><strong>discount_price</strong> - {% trans "Discounted price (if any)" %}</li>
+                    <li><strong>duration_days</strong> - {% trans "Duration in days" %}</li>
+                    <li><strong>max_group_size</strong> - {% trans "Maximum group size" %}</li>
+                    <li><strong>min_age</strong> - {% trans "Minimum age requirement" %}</li>
+                    <li><strong>difficulty</strong> - {% trans "Difficulty level (easy, moderate, challenging)" %}</li>
+                    <li><strong>is_featured</strong> - {% trans "Featured tour (True/False)" %}</li>
+                    <li><strong>is_active</strong> - {% trans "Active tour (True/False)" %}</li>
+                </ul>
+            </div>
+            
+            <div id="tab-itinerary" class="tab-content">
+                <h2>{% trans "Itinerary Fields" %}</h2>
+                <p>{% trans "For each day of the tour, include the following fields:" %}</p>
+                <ul>
+                    <li><strong>tour_name_en</strong> <span class="required">*</span> - {% trans "Tour name in English (to link with tour)" %}</li>
+                    <li><strong>day_number</strong> <span class="required">*</span> - {% trans "Day number (1, 2, 3, etc.)" %}</li>
+                    <li><strong>title_en</strong> <span class="required">*</span> - {% trans "Day title in English" %}</li>
+                    <li><strong>title_ar</strong> - {% trans "Day title in Arabic" %}</li>
+                    <li><strong>title_fr</strong> - {% trans "Day title in French" %}</li>
+                    <li><strong>title_de</strong> - {% trans "Day title in German" %}</li>
+                    <li><strong>description_en</strong> <span class="required">*</span> - {% trans "Day description in English" %}</li>
+                    <li><strong>description_ar</strong> - {% trans "Day description in Arabic" %}</li>
+                    <li><strong>description_fr</strong> - {% trans "Day description in French" %}</li>
+                    <li><strong>description_de</strong> - {% trans "Day description in German" %}</li>
+                    <li><strong>meals_en</strong> - {% trans "Meals included in English (e.g., 'Breakfast, Lunch')" %}</li>
+                    <li><strong>meals_ar</strong> - {% trans "Meals included in Arabic" %}</li>
+                    <li><strong>meals_fr</strong> - {% trans "Meals included in French" %}</li>
+                    <li><strong>meals_de</strong> - {% trans "Meals included in German" %}</li>
+                    <li><strong>accommodation_en</strong> - {% trans "Accommodation details in English" %}</li>
+                    <li><strong>accommodation_ar</strong> - {% trans "Accommodation details in Arabic" %}</li>
+                    <li><strong>accommodation_fr</strong> - {% trans "Accommodation details in French" %}</li>
+                    <li><strong>accommodation_de</strong> - {% trans "Accommodation details in German" %}</li>
+                </ul>
+            </div>
+            
+            <div id="tab-faqs" class="tab-content">
+                <h2>{% trans "FAQ Fields" %}</h2>
+                <p>{% trans "For each FAQ of the tour, include the following fields:" %}</p>
+                <ul>
+                    <li><strong>tour_name_en</strong> <span class="required">*</span> - {% trans "Tour name in English (to link with tour)" %}</li>
+                    <li><strong>question_en</strong> <span class="required">*</span> - {% trans "Question in English" %}</li>
+                    <li><strong>question_ar</strong> - {% trans "Question in Arabic" %}</li>
+                    <li><strong>question_fr</strong> - {% trans "Question in French" %}</li>
+                    <li><strong>question_de</strong> - {% trans "Question in German" %}</li>
+                    <li><strong>answer_en</strong> <span class="required">*</span> - {% trans "Answer in English" %}</li>
+                    <li><strong>answer_ar</strong> - {% trans "Answer in Arabic" %}</li>
+                    <li><strong>answer_fr</strong> - {% trans "Answer in French" %}</li>
+                    <li><strong>answer_de</strong> - {% trans "Answer in German" %}</li>
+                    <li><strong>display_order</strong> - {% trans "Display order (numeric, lower numbers appear first)" %}</li>
+                </ul>
+            </div>
+            
+            <div id="tab-format" class="tab-content">
+                <h2>{% trans "File Format" %}</h2>
+                <p>{% trans "Your Excel file should have three sheets:" %}</p>
+                <ol>
+                    <li><strong>Tours</strong> - {% trans "Contains all tour information" %}</li>
+                    <li><strong>Itinerary</strong> - {% trans "Contains day-by-day itinerary for all tours" %}</li>
+                    <li><strong>FAQs</strong> - {% trans "Contains FAQs for all tours" %}</li>
+                </ol>
+                
+                <p>{% trans "Alternatively, you can use a CSV file with all fields in a single sheet, but this is more complex to manage." %}</p>
+                
+                <h3>{% trans "Sample Excel Format:" %}</h3>
+                <p>{% trans "Sheet 1: Tours" %}</p>
+                <table class="sample-table">
+                    <tr>
+                        <th>name_en</th>
+                        <th>name_ar</th>
+                        <th>slug</th>
+                        <th>description_en</th>
+                        <th>short_description_en</th>
+                        <th>destination</th>
+                        <th>categories</th>
+                        <th>price</th>
+                    </tr>
+                    <tr>
+                        <td>Cairo Tour</td>
+                        <td>جولة القاهرة</td>
+                        <td>cairo-tour</td>
+                        <td>Explore the ancient wonders...</td>
+                        <td>A 3-day tour of Cairo</td>
+                        <td>Cairo</td>
+                        <td>Historical, Cultural</td>
+                        <td>1200</td>
+                    </tr>
+                </table>
+                
+                <p>{% trans "Sheet 2: Itinerary" %}</p>
+                <table class="sample-table">
+                    <tr>
+                        <th>tour_name_en</th>
+                        <th>day_number</th>
+                        <th>title_en</th>
+                        <th>description_en</th>
+                        <th>meals_en</th>
+                        <th>accommodation_en</th>
+                    </tr>
+                    <tr>
+                        <td>Cairo Tour</td>
+                        <td>1</td>
+                        <td>Pyramids of Giza</td>
+                        <td>Visit the Great Pyramids...</td>
+                        <td>Breakfast, Lunch</td>
+                        <td>Marriott Hotel</td>
+                    </tr>
+                </table>
+                
+                <p>{% trans "Sheet 3: FAQs" %}</p>
+                <table class="sample-table">
+                    <tr>
+                        <th>tour_name_en</th>
+                        <th>question_en</th>
+                        <th>answer_en</th>
+                        <th>display_order</th>
+                    </tr>
+                    <tr>
+                        <td>Cairo Tour</td>
+                        <td>What should I wear?</td>
+                        <td>Comfortable clothing and walking shoes...</td>
+                        <td>1</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        
+        <form action="" method="post" enctype="multipart/form-data">
+            {% csrf_token %}
+            
+            <div class="form-row">
+                <label for="{{ form.file.id_for_label }}">{{ form.file.label }}</label>
+                {{ form.file }}
+                <div class="help-text">{{ form.file.help_text }}</div>
+            </div>
+            
+            <div class="form-row">
+                <label for="{{ form.file_format.id_for_label }}">{{ form.file_format.label }}</label>
+                {{ form.file_format }}
+            </div>
+            
+            <div class="submit-row">
+                <input type="submit" value="{% trans 'Import' %}" class="default">
+                <a href="{% url 'admin:tour_tour_changelist' %}" class="button cancel-link">{% trans "Cancel" %}</a>
+            </div>
+        </form>
+    </div>
+</div>
+{% endblock %}

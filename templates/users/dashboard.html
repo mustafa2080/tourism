@@ -1,0 +1,247 @@
+{% extends "base.html" %}
+{% load i18n static %}
+
+{% block content %}
+<div class="container mx-auto py-8">
+    <h1 class="text-3xl font-bold text-gray-800 mb-6">{% trans "User Dashboard" %}</h1>
+    
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <!-- User Profile Card -->
+        <div class="bg-white rounded-lg shadow-md p-6 flex flex-col items-center">
+            {% if user.profile_picture %}
+                <img src="{{ user.profile_picture.url }}" alt="{% trans 'Profile Picture' %}" class="w-32 h-32 rounded-full object-cover mb-4">
+            {% else %}
+                <div class="w-32 h-32 rounded-full bg-gradient-to-br from-primary to-secondary flex items-center justify-center text-white text-4xl font-bold mb-4">
+                    {{ user.username|first|upper }}
+                </div>
+            {% endif %}
+            
+            <h2 class="text-xl font-semibold text-gray-800">{{ user.get_full_name|default:user.username }}</h2>
+            <p class="text-gray-600 mb-4">{{ user.email }}</p>
+            
+            <div class="w-full mt-4 space-y-2">
+                <a href="{% url 'users:user_profile_update' %}" class="block w-full text-center bg-primary hover:bg-primary-dark text-white py-2 px-4 rounded-lg transition duration-300">
+                    {% trans "Edit Profile" %}
+                </a>
+                <a href="{% url 'users:user_booking_list' %}" class="block w-full text-center border border-primary text-primary hover:bg-primary hover:text-white py-2 px-4 rounded-lg transition duration-300">
+                    {% trans "View All Bookings" %}
+                </a>
+            </div>
+        </div>
+        
+        <!-- Upcoming Bookings -->
+        <div class="bg-white rounded-lg shadow-md p-6">
+            <h2 class="text-xl font-semibold text-gray-800 mb-4 flex items-center">
+                <i class="fas fa-calendar-alt text-primary mr-2"></i>
+                {% trans "Upcoming Bookings" %}
+            </h2>
+            
+            {% if upcoming_bookings %}
+                <div class="space-y-4">
+                    {% for booking in upcoming_bookings|slice:":3" %}
+                        <div class="border-b border-gray-200 pb-4 last:border-b-0 last:pb-0">
+                            <div class="flex items-start">
+                                {% if booking.tour.featured_image %}
+                                    <img src="{{ booking.tour.featured_image.url }}" alt="{{ booking.tour.name }}" class="w-16 h-16 object-cover rounded-md mr-3">
+                                {% else %}
+                                    <div class="w-16 h-16 bg-gray-200 rounded-md flex items-center justify-center mr-3">
+                                        <i class="fas fa-mountain text-gray-400 text-2xl"></i>
+                                    </div>
+                                {% endif %}
+                                
+                                <div class="flex-1">
+                                    <h3 class="font-medium text-gray-800">{{ booking.tour.name }}</h3>
+                                    <div class="text-sm text-gray-600 mt-1">
+                                        <div class="flex items-center">
+                                            <i class="far fa-calendar-alt mr-1 text-primary"></i>
+                                            <span>{{ booking.tour.start_date|date:"M d, Y" }} - {{ booking.tour.end_date|date:"M d, Y" }}</span>
+                                        </div>
+                                        <div class="flex items-center mt-1">
+                                            <i class="fas fa-user-friends mr-1 text-primary"></i>
+                                            <span>{{ booking.num_travelers }} {% trans "travelers" %}</span>
+                                        </div>
+                                        <div class="mt-1">
+                                            <span class="inline-block px-2 py-1 text-xs rounded-full 
+                                                {% if booking.status == 'confirmed' %}bg-green-100 text-green-800
+                                                {% elif booking.status == 'pending' %}bg-yellow-100 text-yellow-800
+                                                {% else %}bg-gray-100 text-gray-800{% endif %}">
+                                                {{ booking.get_status_display }}
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    {% endfor %}
+                    
+                    {% if upcoming_bookings.count > 3 %}
+                        <div class="text-center mt-4">
+                            <a href="{% url 'users:user_booking_list' %}" class="text-primary hover:text-primary-dark font-medium">
+                                {% trans "View all" %} ({{ upcoming_bookings.count }})
+                            </a>
+                        </div>
+                    {% endif %}
+                </div>
+            {% else %}
+                <div class="text-center py-6 text-gray-500">
+                    <i class="far fa-calendar-times text-3xl mb-2"></i>
+                    <p>{% trans "No upcoming bookings" %}</p>
+                    <a href="{% url 'tour:tour_list' %}" class="text-primary hover:text-primary-dark mt-2 inline-block">
+                        {% trans "Browse tours" %}
+                    </a>
+                </div>
+            {% endif %}
+        </div>
+        
+        <!-- Completed Tours -->
+        <div class="bg-white rounded-lg shadow-md p-6">
+            <h2 class="text-xl font-semibold text-gray-800 mb-4 flex items-center">
+                <i class="fas fa-check-circle text-primary mr-2"></i>
+                {% trans "Completed Tours" %}
+            </h2>
+            
+            {% if completed_tours %}
+                <div class="space-y-4">
+                    {% for booking in completed_tours|slice:":3" %}
+                        <div class="border-b border-gray-200 pb-4 last:border-b-0 last:pb-0">
+                            <div class="flex items-start">
+                                {% if booking.tour.featured_image %}
+                                    <img src="{{ booking.tour.featured_image.url }}" alt="{{ booking.tour.name }}" class="w-16 h-16 object-cover rounded-md mr-3">
+                                {% else %}
+                                    <div class="w-16 h-16 bg-gray-200 rounded-md flex items-center justify-center mr-3">
+                                        <i class="fas fa-mountain text-gray-400 text-2xl"></i>
+                                    </div>
+                                {% endif %}
+                                
+                                <div class="flex-1">
+                                    <h3 class="font-medium text-gray-800">{{ booking.tour.name }}</h3>
+                                    <div class="text-sm text-gray-600 mt-1">
+                                        <div class="flex items-center">
+                                            <i class="far fa-calendar-check mr-1 text-primary"></i>
+                                            <span>{{ booking.tour.start_date|date:"M d, Y" }} - {{ booking.tour.end_date|date:"M d, Y" }}</span>
+                                        </div>
+                                        <div class="flex items-center mt-1">
+                                            <i class="fas fa-user-friends mr-1 text-primary"></i>
+                                            <span>{{ booking.num_travelers }} {% trans "travelers" %}</span>
+                                        </div>
+                                    </div>
+                                    
+                                    {% if not booking.has_review %}
+                                        <a href="{% url 'tour:add_review' booking.tour.slug %}" class="inline-block mt-2 text-sm text-primary hover:text-primary-dark">
+                                            <i class="fas fa-star mr-1"></i> {% trans "Write a review" %}
+                                        </a>
+                                    {% endif %}
+                                </div>
+                            </div>
+                        </div>
+                    {% endfor %}
+                    
+                    {% if completed_tours.count > 3 %}
+                        <div class="text-center mt-4">
+                            <a href="{% url 'users:user_booking_list' %}?filter=completed" class="text-primary hover:text-primary-dark font-medium">
+                                {% trans "View all" %} ({{ completed_tours.count }})
+                            </a>
+                        </div>
+                    {% endif %}
+                </div>
+            {% else %}
+                <div class="text-center py-6 text-gray-500">
+                    <i class="far fa-check-square text-3xl mb-2"></i>
+                    <p>{% trans "No completed tours yet" %}</p>
+                </div>
+            {% endif %}
+        </div>
+    </div>
+    
+    <!-- Recent Activity -->
+    <div class="bg-white rounded-lg shadow-md p-6 mt-6">
+        <h2 class="text-xl font-semibold text-gray-800 mb-4 flex items-center">
+            <i class="fas fa-history text-primary mr-2"></i>
+            {% trans "Recent Activity" %}
+        </h2>
+        
+        {% if upcoming_bookings or completed_tours %}
+            <div class="overflow-x-auto">
+                <table class="min-w-full divide-y divide-gray-200">
+                    <thead class="bg-gray-50">
+                        <tr>
+                            <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                                {% trans "Tour" %}
+                            </th>
+                            <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                                {% trans "Date" %}
+                            </th>
+                            <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                                {% trans "Status" %}
+                            </th>
+                            <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                                {% trans "Price" %}
+                            </th>
+                            <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                                {% trans "Actions" %}
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody class="bg-white divide-y divide-gray-200">
+                        {% with recent_bookings=upcoming_bookings|slice:":2"|add:completed_tours|slice:":3" %}
+                            {% for booking in recent_bookings %}
+                                <tr>
+                                    <td class="px-6 py-4 whitespace-nowrap">
+                                        <div class="flex items-center">
+                                            {% if booking.tour.featured_image %}
+                                                <img src="{{ booking.tour.featured_image.url }}" alt="{{ booking.tour.name }}" class="w-10 h-10 object-cover rounded-md mr-3">
+                                            {% else %}
+                                                <div class="w-10 h-10 bg-gray-200 rounded-md flex items-center justify-center mr-3">
+                                                    <i class="fas fa-mountain text-gray-400"></i>
+                                                </div>
+                                            {% endif %}
+                                            <div>
+                                                <div class="text-sm font-medium text-gray-900">{{ booking.tour.name }}</div>
+                                                <div class="text-sm text-gray-500">{{ booking.tour.destination.name }}</div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="px-6 py-4 whitespace-nowrap">
+                                        <div class="text-sm text-gray-900">{{ booking.tour.start_date|date:"M d, Y" }}</div>
+                                        <div class="text-sm text-gray-500">{{ booking.tour.duration }} {% trans "days" %}</div>
+                                    </td>
+                                    <td class="px-6 py-4 whitespace-nowrap">
+                                        <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full 
+                                            {% if booking.status == 'confirmed' %}bg-green-100 text-green-800
+                                            {% elif booking.status == 'pending' %}bg-yellow-100 text-yellow-800
+                                            {% elif booking.status == 'cancelled' %}bg-red-100 text-red-800
+                                            {% else %}bg-gray-100 text-gray-800{% endif %}">
+                                            {{ booking.get_status_display }}
+                                        </span>
+                                    </td>
+                                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                                        {{ booking.total_price|floatformat:2 }} {{ booking.currency }}
+                                    </td>
+                                    <td class="px-6 py-4 whitespace-nowrap text-sm font-medium">
+                                        <a href="{% url 'users:user_booking_detail' booking.id %}" class="text-primary hover:text-primary-dark mr-3">
+                                            {% trans "View" %}
+                                        </a>
+                                        {% if booking.tour.end_date < today and not booking.has_review %}
+                                            <a href="{% url 'tour:add_review' booking.tour.slug %}" class="text-accent hover:text-accent-dark">
+                                                {% trans "Review" %}
+                                            </a>
+                                        {% endif %}
+                                    </td>
+                                </tr>
+                            {% endfor %}
+                        {% endwith %}
+                    </tbody>
+                </table>
+            </div>
+        {% else %}
+            <div class="text-center py-6 text-gray-500">
+                <i class="far fa-calendar-alt text-3xl mb-2"></i>
+                <p>{% trans "No activity yet" %}</p>
+                <a href="{% url 'tour:tour_list' %}" class="text-primary hover:text-primary-dark mt-2 inline-block">
+                    {% trans "Browse tours" %}
+                </a>
+            </div>
+        {% endif %}
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,167 @@
+{% extends "admin/base_site.html" %}
+{% load i18n admin_urls static %}
+
+{% block extrahead %}
+    {{ block.super }}
+    <style>
+        .import-form {
+            margin: 20px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+        }
+        .import-form .form-row {
+            margin-bottom: 15px;
+        }
+        .import-form label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        .import-form .help-text {
+            color: #666;
+            font-size: 0.9em;
+            margin-top: 5px;
+        }
+        .import-form .submit-row {
+            margin-top: 20px;
+        }
+        .import-form .submit-row input {
+            padding: 10px 15px;
+        }
+        .import-instructions {
+            margin-bottom: 20px;
+        }
+        .sample-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+            font-size: 0.9em;
+        }
+        .sample-table th, .sample-table td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        .sample-table th {
+            background-color: #f2f2f2;
+        }
+        .sample-table tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        .download-sample {
+            margin-top: 15px;
+            margin-bottom: 20px;
+        }
+        .download-sample a {
+            display: inline-block;
+            padding: 8px 15px;
+            background-color: #4CAF50;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+        }
+        .download-sample a:hover {
+            background-color: #45a049;
+        }
+        .checkbox-row {
+            margin-bottom: 10px;
+        }
+        .checkbox-row input {
+            margin-right: 10px;
+        }
+    </style>
+{% endblock %}
+
+{% block breadcrumbs %}
+<div class="breadcrumbs">
+    <a href="{% url 'admin:index' %}">{% trans 'Home' %}</a>
+    &rsaquo; <a href="{% url 'admin:app_list' app_label=opts.app_label %}">{{ opts.app_config.verbose_name }}</a>
+    &rsaquo; <a href="{% url 'admin:tour_category_changelist' %}">{{ opts.verbose_name_plural|capfirst }}</a>
+    &rsaquo; {% trans 'Import Categories' %}
+</div>
+{% endblock %}
+
+{% block content %}
+<div id="content-main">
+    <div class="import-form">
+        <h1>{% trans "Import Categories from Excel/CSV" %}</h1>
+        
+        <div class="download-sample">
+            <a href="{% url 'admin:download_sample_category_file' %}">{% trans "Download Sample File" %}</a>
+        </div>
+        
+        <div class="import-instructions">
+            <h2>{% trans "Category Fields" %}</h2>
+            <p>{% trans "The following fields are required or optional for each category:" %}</p>
+            <ul>
+                <li><strong>name_en</strong> <span style="color: red;">*</span> - {% trans "Category name in English (required)" %}</li>
+                <li><strong>name_ar</strong> - {% trans "Category name in Arabic" %}</li>
+                <li><strong>name_fr</strong> - {% trans "Category name in French" %}</li>
+                <li><strong>name_de</strong> - {% trans "Category name in German" %}</li>
+                <li><strong>slug</strong> - {% trans "URL slug (will be auto-generated from name_en if empty)" %}</li>
+                <li><strong>description_en</strong> - {% trans "Description in English" %}</li>
+                <li><strong>description_ar</strong> - {% trans "Description in Arabic" %}</li>
+                <li><strong>description_fr</strong> - {% trans "Description in French" %}</li>
+                <li><strong>description_de</strong> - {% trans "Description in German" %}</li>
+                <li><strong>is_active</strong> - {% trans "Active category (True/False)" %}</li>
+            </ul>
+            
+            <h3>{% trans "Sample Data Format" %}</h3>
+            <table class="sample-table">
+                <thead>
+                    <tr>
+                        <th>name_en</th>
+                        <th>name_ar</th>
+                        <th>slug</th>
+                        <th>description_en</th>
+                        <th>is_active</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Adventure Tours</td>
+                        <td>جولات المغامرة</td>
+                        <td>adventure-tours</td>
+                        <td>Exciting adventure tours for thrill seekers.</td>
+                        <td>True</td>
+                    </tr>
+                    <tr>
+                        <td>Cultural Tours</td>
+                        <td>جولات ثقافية</td>
+                        <td>cultural-tours</td>
+                        <td>Explore local cultures and traditions.</td>
+                        <td>True</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+        <form method="post" enctype="multipart/form-data">
+            {% csrf_token %}
+            
+            <div class="form-row">
+                <label for="{{ form.file.id_for_label }}">{{ form.file.label }}</label>
+                {{ form.file }}
+                <div class="help-text">{{ form.file.help_text }}</div>
+            </div>
+            
+            <div class="form-row">
+                <label for="{{ form.file_format.id_for_label }}">{{ form.file_format.label }}</label>
+                {{ form.file_format }}
+            </div>
+            
+            <div class="form-row checkbox-row">
+                {{ form.update_existing }}
+                <label for="{{ form.update_existing.id_for_label }}">{{ form.update_existing.label }}</label>
+                <div class="help-text">{{ form.update_existing.help_text }}</div>
+            </div>
+            
+            <div class="submit-row">
+                <input type="submit" value="{% trans 'Import Categories' %}" class="default" name="_import">
+            </div>
+        </form>
+    </div>
+</div>
+{% endblock %}

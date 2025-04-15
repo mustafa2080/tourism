@@ -1,0 +1,300 @@
+{% extends "base.html" %}
+{% load i18n static %}
+{% load account socialaccount %}
+
+{% block title %}{% trans "Sign Up" %} - {% trans "Tourism Project" %}{% endblock %}
+
+{% block extra_css %}
+<style>
+  .fade-in {
+    animation: fadeIn 0.8s ease-in-out;
+  }
+  
+  .slide-up {
+    animation: slideUp 0.6s ease-out;
+  }
+  
+  .pulse {
+    animation: pulse 2s infinite;
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  
+  @keyframes slideUp {
+    from { transform: translateY(20px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+  }
+  
+  @keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+  }
+  
+  .input-group:focus-within label {
+    color: #2563eb;
+    transform: translateY(-1px);
+    transition: all 0.2s ease;
+  }
+  
+  .form-field {
+    transition: all 0.3s ease;
+  }
+  
+  .form-field:focus-within {
+    transform: translateX(5px);
+  }
+</style>
+{% endblock %}
+
+{% block content %}
+<div class="min-h-screen flex items-center justify-center bg-gradient-to-br from-blue-50 to-indigo-100 py-12 px-4 sm:px-6 lg:px-8">
+  <div class="max-w-5xl w-full flex shadow-2xl rounded-xl overflow-hidden bg-white">
+    <!-- Left side - Signup form -->
+    <div class="w-full md:w-1/2 p-8 md:p-12 fade-in">
+      <div class="text-center mb-8 slide-up">
+        <h1 class="text-3xl font-bold text-gray-800">{% trans "Join Our Community" %}</h1>
+        <p class="text-gray-600 mt-2">{% trans "Create an account to start your journey" %}</p>
+      </div>
+
+      {% if form.errors %}
+        <div class="mb-4 p-4 rounded-md bg-red-50 border border-red-200 slide-up" style="animation-delay: 0.1s">
+          <p class="text-sm text-red-600">
+            {% if form.non_field_errors %}
+              {{ form.non_field_errors.0 }}
+            {% else %}
+              {% trans "Please correct the errors below." %}
+            {% endif %}
+          </p>
+        </div>
+      {% endif %}
+
+      <form class="space-y-5" method="POST" action="{% url 'account_signup' %}">
+        {% csrf_token %}
+        
+        <div class="form-field slide-up" style="animation-delay: 0.2s">
+          <div class="input-group">
+            <label for="{{ form.email.id_for_label }}" class="block text-sm font-medium text-gray-700 mb-1 transition-all duration-200">
+              <i class="far fa-envelope text-gray-400 mr-1"></i>
+              {% trans "Email Address" %}
+            </label>
+            <div class="relative">
+              <input type="email" name="{{ form.email.html_name }}" id="{{ form.email.id_for_label }}" 
+                    class="appearance-none block w-full px-4 py-3 border border-gray-300 rounded-lg shadow-sm placeholder-gray-400 focus:outline-none focus:ring-blue-500 focus:border-blue-500 transition-all duration-300"
+                    placeholder="{% trans 'Enter your email' %}" required>
+              <div class="absolute inset-y-0 right-0 pr-3 flex items-center pointer-events-none text-gray-400">
+                <i class="fas fa-at"></i>
+              </div>
+            </div>
+            {% if form.email.errors %}
+              <p class="mt-1 text-sm text-red-600">{{ form.email.errors.0 }}</p>
+            {% endif %}
+          </div>
+        </div>
+
+        <div class="form-field slide-up" style="animation-delay: 0.3s">
+          <div class="input-group">
+            <label for="{{ form.username.id_for_label }}" class="block text-sm font-medium text-gray-700 mb-1 transition-all duration-200">
+              <i class="far fa-user text-gray-400 mr-1"></i>
+              {% trans "Username" %}
+            </label>
+            <div class="relative">
+              <input type="text" name="{{ form.username.html_name }}" id="{{ form.username.id_for_label }}" 
+                    class="appearance-none block w-full px-4 py-3 border border-gray-300 rounded-lg shadow-sm placeholder-gray-400 focus:outline-none focus:ring-blue-500 focus:border-blue-500 transition-all duration-300"
+                    placeholder="{% trans 'Choose a username' %}" required>
+              <div class="absolute inset-y-0 right-0 pr-3 flex items-center pointer-events-none text-gray-400">
+                <i class="fas fa-user"></i>
+              </div>
+            </div>
+            {% if form.username.errors %}
+              <p class="mt-1 text-sm text-red-600">{{ form.username.errors.0 }}</p>
+            {% endif %}
+          </div>
+        </div>
+
+        <div class="form-field slide-up" style="animation-delay: 0.4s">
+          <div class="input-group">
+            <label for="{{ form.password1.id_for_label }}" class="block text-sm font-medium text-gray-700 mb-1 transition-all duration-200">
+              <i class="fas fa-lock text-gray-400 mr-1"></i>
+              {% trans "Password" %}
+            </label>
+            <div class="relative">
+              <input type="password" name="{{ form.password1.html_name }}" id="{{ form.password1.id_for_label }}" 
+                    class="appearance-none block w-full px-4 py-3 border border-gray-300 rounded-lg shadow-sm placeholder-gray-400 focus:outline-none focus:ring-blue-500 focus:border-blue-500 transition-all duration-300"
+                    placeholder="{% trans 'Create a password' %}" required>
+              <button type="button" class="absolute inset-y-0 right-0 pr-3 flex items-center text-gray-400 hover:text-gray-600 toggle-password">
+                <i class="fas fa-eye"></i>
+              </button>
+            </div>
+            {% if form.password1.errors %}
+              <p class="mt-1 text-sm text-red-600">{{ form.password1.errors.0 }}</p>
+            {% else %}
+              <p class="mt-1 text-xs text-gray-500">{% trans "At least 8 characters with letters and numbers" %}</p>
+            {% endif %}
+          </div>
+        </div>
+
+        <div class="form-field slide-up" style="animation-delay: 0.5s">
+          <div class="input-group">
+            <label for="{{ form.password2.id_for_label }}" class="block text-sm font-medium text-gray-700 mb-1 transition-all duration-200">
+              <i class="fas fa-lock text-gray-400 mr-1"></i>
+              {% trans "Confirm Password" %}
+            </label>
+            <div class="relative">
+              <input type="password" name="{{ form.password2.html_name }}" id="{{ form.password2.id_for_label }}" 
+                    class="appearance-none block w-full px-4 py-3 border border-gray-300 rounded-lg shadow-sm placeholder-gray-400 focus:outline-none focus:ring-blue-500 focus:border-blue-500 transition-all duration-300"
+                    placeholder="{% trans 'Confirm your password' %}" required>
+              <button type="button" class="absolute inset-y-0 right-0 pr-3 flex items-center text-gray-400 hover:text-gray-600 toggle-password">
+                <i class="fas fa-eye"></i>
+              </button>
+            </div>
+            {% if form.password2.errors %}
+              <p class="mt-1 text-sm text-red-600">{{ form.password2.errors.0 }}</p>
+            {% endif %}
+          </div>
+        </div>
+
+        <div class="form-field slide-up" style="animation-delay: 0.6s">
+          <div class="flex items-center">
+            <input id="terms" name="terms" type="checkbox" required
+                  class="h-4 w-4 text-blue-600 focus:ring-blue-500 border-gray-300 rounded">
+            <label for="terms" class="ml-2 block text-sm text-gray-700">
+              {% trans "I agree to the" %} <a href="{% url 'core:terms' %}" class="text-blue-600 hover:underline">{% trans "Terms of Service" %}</a> {% trans "and" %} <a href="{% url 'core:privacy' %}" class="text-blue-600 hover:underline">{% trans "Privacy Policy" %}</a>
+            </label>
+          </div>
+        </div>
+
+        {% if redirect_field_value %}
+          <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
+        {% endif %}
+
+        <button type="submit" class="w-full flex justify-center py-3 px-4 border border-transparent rounded-lg shadow-sm text-sm font-medium text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 transition-all duration-300 transform hover:scale-[1.02] slide-up pulse" style="animation-delay: 0.7s">
+          <i class="fas fa-user-plus mr-2"></i>
+          {% trans "Create Account" %}
+        </button>
+      </form>
+
+      {% get_providers as socialaccount_providers %}
+      {% if socialaccount_providers %}
+        <div class="mt-6 slide-up" style="animation-delay: 0.8s">
+          <div class="relative">
+            <div class="absolute inset-0 flex items-center">
+              <div class="w-full border-t border-gray-300"></div>
+            </div>
+            <div class="relative flex justify-center text-sm">
+              <span class="px-2 bg-white text-gray-500">{% trans "Or sign up with" %}</span>
+            </div>
+          </div>
+
+          <div class="mt-6 grid grid-cols-{{ socialaccount_providers|length|default:3 }} gap-3">
+            {% for provider in socialaccount_providers %}
+              <a href="{% provider_login_url provider.id process='login' %}" 
+                class="w-full inline-flex justify-center py-2 px-4 border border-gray-300 rounded-lg shadow-sm bg-white text-sm font-medium text-gray-500 hover:bg-gray-50 transition-all duration-300 transform hover:scale-105">
+                {% if provider.name == 'Google' %}
+                  <i class="fab fa-google text-red-500"></i>
+                {% elif provider.name == 'Facebook' %}
+                  <i class="fab fa-facebook-f text-blue-600"></i>
+                {% elif provider.name == 'Twitter' %}
+                  <i class="fab fa-twitter text-blue-400"></i>
+                {% else %}
+                  <i class="fas fa-external-link-alt"></i>
+                {% endif %}
+              </a>
+            {% endfor %}
+          </div>
+        </div>
+      {% endif %}
+
+      <div class="mt-6 text-center text-sm slide-up" style="animation-delay: 0.9s">
+        <p class="text-gray-600">
+          {% trans "Already have an account?" %}
+          <a href="{% url 'account_login' %}" class="font-medium text-blue-600 hover:text-blue-500 ml-1 transition-colors duration-300">
+            {% trans "Sign in" %}
+          </a>
+        </p>
+      </div>
+    </div>
+    
+    <!-- Right side - Image and benefits -->
+    <div class="hidden md:block md:w-1/2 bg-gradient-to-br from-blue-600 to-indigo-700 text-white p-12 relative">
+      <div class="absolute inset-0 bg-cover bg-center opacity-20" style="background-image: url('{% static 'images/signup-bg.jpg' %}');"></div>
+      <div class="relative z-10 fade-in">
+        <h2 class="text-3xl font-bold mb-6">{% trans "Start Your Adventure" %}</h2>
+        <p class="mb-8">{% trans "Join thousands of travelers discovering the world's most beautiful destinations." %}</p>
+        
+        <div class="mt-12 space-y-8">
+          <div class="transform transition-all duration-500 hover:translate-x-2">
+            <h3 class="text-xl font-semibold mb-2 flex items-center">
+              <i class="fas fa-map-marked-alt mr-3 text-blue-300"></i>
+              {% trans "Explore Destinations" %}
+            </h3>
+            <p class="text-blue-100 ml-8">{% trans "Access exclusive travel guides and insider tips." %}</p>
+          </div>
+          
+          <div class="transform transition-all duration-500 hover:translate-x-2">
+            <h3 class="text-xl font-semibold mb-2 flex items-center">
+              <i class="fas fa-percent mr-3 text-blue-300"></i>
+              {% trans "Member Discounts" %}
+            </h3>
+            <p class="text-blue-100 ml-8">{% trans "Get special rates and early access to promotions." %}</p>
+          </div>
+          
+          <div class="transform transition-all duration-500 hover:translate-x-2">
+            <h3 class="text-xl font-semibold mb-2 flex items-center">
+              <i class="fas fa-heart mr-3 text-blue-300"></i>
+              {% trans "Save Favorites" %}
+            </h3>
+            <p class="text-blue-100 ml-8">{% trans "Create your travel wishlist and plan your next trip." %}</p>
+          </div>
+          
+          <div class="transform transition-all duration-500 hover:translate-x-2">
+            <h3 class="text-xl font-semibold mb-2 flex items-center">
+              <i class="fas fa-comments mr-3 text-blue-300"></i>
+              {% trans "Community" %}
+            </h3>
+            <p class="text-blue-100 ml-8">{% trans "Connect with fellow travelers and share experiences." %}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}
+
+{% block extra_js %}
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    // Password visibility toggle
+    const toggleButtons = document.querySelectorAll('.toggle-password');
+    toggleButtons.forEach(button => {
+      button.addEventListener('click', function() {
+        const input = this.parentNode.querySelector('input');
+        const icon = this.querySelector('i');
+        
+        if (input.type === 'password') {
+          input.type = 'text';
+          icon.classList.remove('fa-eye');
+          icon.classList.add('fa-eye-slash');
+        } else {
+          input.type = 'password';
+          icon.classList.remove('fa-eye-slash');
+          icon.classList.add('fa-eye');
+        }
+      });
+    });
+    
+    // Add animation to form fields on focus
+    const formFields = document.querySelectorAll('.form-field');
+    formFields.forEach(field => {
+      const input = field.querySelector('input');
+      input.addEventListener('focus', () => {
+        formFields.forEach(f => f.classList.remove('active'));
+        field.classList.add('active');
+      });
+    });
+  });
+</script>
+{% endblock %}

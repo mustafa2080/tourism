@@ -1,0 +1,207 @@
+# Tourism Project Dutch Translation
+# Copyright (C) 2025
+msgid ""
+msgstr ""
+"Project-Id-Version: Tourism Project 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-04-05 12:00+0200\n"
+"PO-Revision-Date: 2025-04-05 12:00+0200\n"
+"Last-Translator: \n"
+"Language-Team: Dutch\n"
+"Language: nl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+msgid "Tourism Website"
+msgstr "Toerisme Website"
+
+msgid "Home"
+msgstr "Home"
+
+msgid "Tours"
+msgstr "Rondreizen"
+
+msgid "Blog"
+msgstr "Blog"
+
+msgid "Contact"
+msgstr "Contact"
+
+msgid "Login"
+msgstr "Inloggen"
+
+msgid "Register"
+msgstr "Registreren"
+
+msgid "My Profile"
+msgstr "Mijn Profiel"
+
+msgid "My Bookings"
+msgstr "Mijn Boekingen"
+
+msgid "Admin Panel"
+msgstr "Beheerpaneel"
+
+msgid "Logout"
+msgstr "Uitloggen"
+
+msgid "About Us"
+msgstr "Over Ons"
+
+msgid "We offer the best tourism experience with unforgettable memories."
+msgstr "Wij bieden de beste toeristische ervaring met onvergetelijke herinneringen."
+
+msgid "Quick Links"
+msgstr "Snelle Links"
+
+msgid "Subscribe"
+msgstr "Inschrijven"
+
+msgid "Get the latest news and updates"
+msgstr "Ontvang het laatste nieuws en updates"
+
+msgid "Your Email"
+msgstr "Uw E-mail"
+
+msgid "Tourism Website. All rights reserved."
+msgstr "Toerisme Website. Alle rechten voorbehouden."
+
+msgid "Select language"
+msgstr "Selecteer taal"
+
+msgid "Open main menu"
+msgstr "Hoofdmenu openen"
+
+msgid "Close"
+msgstr "Sluiten"
+
+msgid "Search"
+msgstr "Zoeken"
+
+msgid "Search for tours, destinations..."
+msgstr "Zoek naar rondreizen, bestemmingen..."
+
+msgid "Popular Destinations"
+msgstr "Populaire Bestemmingen"
+
+msgid "Featured Tours"
+msgstr "Uitgelichte Rondreizen"
+
+msgid "View Details"
+msgstr "Details Bekijken"
+
+msgid "Book Now"
+msgstr "Nu Boeken"
+
+msgid "Latest Blog Posts"
+msgstr "Laatste Blogberichten"
+
+msgid "Read More"
+msgstr "Lees Meer"
+
+msgid "View All"
+msgstr "Alles Bekijken"
+
+msgid "Arabic"
+msgstr "Arabisch"
+
+msgid "English"
+msgstr "Engels"
+
+msgid "French"
+msgstr "Frans"
+
+msgid "German"
+msgstr "Duits"
+
+msgid "Price"
+msgstr "Prijs"
+
+msgid "Duration"
+msgstr "Duur"
+
+msgid "Group Size"
+msgstr "Groepsgrootte"
+
+msgid "Reviews"
+msgstr "Beoordelingen"
+
+msgid "Tour Details"
+msgstr "Rondreis Details"
+
+msgid "Itinerary"
+msgstr "Reisplan"
+
+msgid "Inclusions"
+msgstr "Inbegrepen"
+
+msgid "Exclusions"
+msgstr "Niet Inbegrepen"
+
+msgid "Additional Information"
+msgstr "Aanvullende Informatie"
+
+msgid "Related Tours"
+msgstr "Gerelateerde Rondreizen"
+
+msgid "From"
+msgstr "Vanaf"
+
+msgid "Start Date"
+msgstr "Startdatum"
+
+msgid "End Date"
+msgstr "Einddatum"
+
+msgid "Guests"
+msgstr "Gasten"
+
+msgid "Adult"
+msgstr "Volwassene"
+
+msgid "Child"
+msgstr "Kind"
+
+msgid "Total"
+msgstr "Totaal"
+
+msgid "Booking Confirmation"
+msgstr "Boekingsbevestiging"
+
+msgid "Booking Details"
+msgstr "Boekingsdetails"
+
+msgid "Payment Information"
+msgstr "Betalingsinformatie"
+
+msgid "Card Number"
+msgstr "Kaartnummer"
+
+msgid "Expiry Date"
+msgstr "Vervaldatum"
+
+msgid "CVV"
+msgstr "CVV"
+
+msgid "Pay Now"
+msgstr "Nu Betalen"
+
+msgid "Tour Guide"
+msgstr "Reisgids"
+
+msgid "Languages"
+msgstr "Talen"
+
+msgid "Experience"
+msgstr "Ervaring"
+
+msgid "years"
+msgstr "jaar"
+
+msgid "days"
+msgstr "dagen"
+
+msgid "per person"
+msgstr "per persoon"

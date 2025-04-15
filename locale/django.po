@@ -1,0 +1,4692 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-04-12 14:46+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+
+#: .\blog\admin.py:46
+msgid "Post Info"
+msgstr ""
+
+#: .\blog\admin.py:47
+msgid "Publishing"
+msgstr ""
+
+#: .\blog\admin.py:48 .\blog\models\comment.py:24 .\blog\models\post.py:22
+#: .\core\admin.py:29
+msgid "Content"
+msgstr ""
+
+#: .\blog\admin.py:49
+msgid "SEO"
+msgstr ""
+
+#: .\blog\admin.py:58
+msgid "Publish selected posts"
+msgstr ""
+
+#: .\blog\admin.py:62
+msgid "Unpublish selected posts"
+msgstr ""
+
+#: .\blog\admin.py:98
+msgid "(Anonymous)"
+msgstr ""
+
+#: .\blog\admin.py:99
+msgid "Author"
+msgstr ""
+
+#: .\blog\admin.py:103
+msgid "Preview"
+msgstr ""
+
+#: .\blog\admin.py:107
+msgid "Approve selected comments"
+msgstr ""
+
+#: .\blog\admin.py:111
+msgid "Unapprove selected comments"
+msgstr ""
+
+#: .\blog\apps.py:7
+msgid "Blog Management"
+msgstr ""
+
+#: .\blog\forms.py:12
+msgid "Your Name (required)"
+msgstr ""
+
+#: .\blog\forms.py:13
+msgid "Your Email (required, not published)"
+msgstr ""
+
+#: .\blog\forms.py:14
+msgid "Your Website (optional)"
+msgstr ""
+
+#: .\blog\forms.py:15
+msgid "Your Comment..."
+msgstr ""
+
+#: .\blog\forms.py:19 .\blog\models\category.py:15 .\blog\models\comment.py:19
+#: .\blog\models\tag.py:15 .\core\models.py:66
+#: .\templates\booking\booking_detail.html:81
+msgid "Name"
+msgstr ""
+
+#: .\blog\forms.py:20 .\blog\models\comment.py:20 .\core\forms.py:30
+#: .\core\models.py:67 .\core\models.py:110
+#: .\templates\booking\booking_detail.html:84
+msgid "Email"
+msgstr ""
+
+#: .\blog\forms.py:21 .\blog\models\comment.py:21
+msgid "Website"
+msgstr ""
+
+#: .\blog\forms.py:22 .\blog\models\comment.py:35 .\reviews\models.py:26
+#: .\templates\reviews\add_review.html:15
+msgid "Comment"
+msgstr ""
+
+#: .\blog\models\category.py:16 .\blog\models\tag.py:16 .\tour\models.py:14
+#: .\tour\models.py:57 .\tour\models.py:81 .\tour\models.py:103
+#: .\tour\models.py:241 .\tour\models.py:278
+msgid "Description"
+msgstr ""
+
+#: .\blog\models\category.py:17 .\blog\models\post.py:23
+msgid "SEO Title"
+msgstr ""
+
+#: .\blog\models\category.py:18 .\blog\models\post.py:24
+msgid "SEO Description"
+msgstr ""
+
+#: .\blog\models\category.py:31 .\templates\tour\tour_list.html:62
+#: .\tour\forms.py:23 .\tour\models.py:64
+msgid "Category"
+msgstr ""
+
+#: .\blog\models\category.py:32 .\templates\blog\post_detail.html:143
+#: .\tour\models.py:65 .\tour\models.py:107
+msgid "Categories"
+msgstr ""
+
+#: .\blog\models\comment.py:25 .\templates\users\review_list.html:23
+msgid "Approved"
+msgstr ""
+
+#: .\blog\models\comment.py:36 .\templates\blog\post_detail.html:47
+#: .\templates\blog\post_detail.html:78
+msgid "Comments"
+msgstr ""
+
+#: .\blog\models\post.py:20 .\core\models.py:93 .\tour\models.py:240
+#: .\tour\models.py:274
+msgid "Title"
+msgstr ""
+
+#: .\blog\models\post.py:21
+msgid "Excerpt"
+msgstr ""
+
+#: .\blog\models\post.py:34
+msgid "Published"
+msgstr ""
+
+#: .\blog\models\post.py:40
+msgid "Allow comments"
+msgstr ""
+
+#: .\blog\models\post.py:41
+msgid "Featured"
+msgstr ""
+
+#: .\blog\models\post.py:45
+msgid "Post"
+msgstr ""
+
+#: .\blog\models\post.py:46
+msgid "Posts"
+msgstr ""
+
+#: .\blog\models\post.py:84 .\tour\models.py:42 .\tour\models.py:186
+msgid "Caption"
+msgstr ""
+
+#: .\blog\models\post.py:88
+msgid "Post Image"
+msgstr ""
+
+#: .\blog\models\post.py:89
+msgid "Post Images"
+msgstr ""
+
+#: .\blog\models\tag.py:26
+msgid "Tag"
+msgstr ""
+
+#: .\blog\models\tag.py:27 .\templates\blog\post_detail.html:66
+#: .\templates\blog\post_detail.html:153
+msgid "Tags"
+msgstr ""
+
+#: .\blog\views\post.py:114
+msgid "Your comment has been submitted."
+msgstr ""
+
+#: .\booking\apps.py:7
+msgid "Booking Management"
+msgstr ""
+
+#: .\booking\forms.py:27
+msgid "Any special requirements?"
+msgstr ""
+
+#: .\booking\forms.py:30
+msgid "Check-in Date"
+msgstr ""
+
+#: .\booking\forms.py:31
+msgid "Check-out Date"
+msgstr ""
+
+#: .\booking\forms.py:32
+msgid "Adults"
+msgstr ""
+
+#: .\booking\forms.py:33
+msgid "Children"
+msgstr ""
+
+#: .\booking\forms.py:34 .\booking\models.py:32
+msgid "Special Requests"
+msgstr ""
+
+#: .\booking\forms.py:43
+msgid "End date cannot be before start date."
+msgstr ""
+
+#: .\booking\models.py:13 .\chatbots\models.py:13 .\chatbots\models.py:39
+#: .\core\models.py:92 .\reviews\models.py:20 .\tour\models.py:218
+#: .\users\models.py:54 .\users\models.py:67
+msgid "User"
+msgstr ""
+
+#: .\booking\models.py:14 .\reviews\models.py:14
+#: .\templates\payments\process_payment.html:19
+#: .\templates\users\booking_list.html:14
+#: .\templates\users\dashboard.html:169 .\tour\models.py:138
+#: .\tour\models.py:184 .\tour\models.py:200 .\tour\models.py:238
+#: .\tour\models.py:258 .\users\models.py:69
+msgid "Tour"
+msgstr ""
+
+#: .\booking\models.py:15
+msgid "Booking Date"
+msgstr ""
+
+#: .\booking\models.py:16 .\tour\models.py:201 .\tour\models.py:279
+msgid "Start Date"
+msgstr ""
+
+#: .\booking\models.py:17 .\tour\models.py:202 .\tour\models.py:280
+msgid "End Date"
+msgstr ""
+
+#: .\booking\models.py:18
+msgid "Number of Adults"
+msgstr ""
+
+#: .\booking\models.py:19
+msgid "Number of Children"
+msgstr ""
+
+#: .\booking\models.py:20
+msgid "Total Price"
+msgstr ""
+
+#: .\booking\models.py:24 .\payments\models.py:25
+#: .\templates\booking\booking_list.html:49
+msgid "Pending"
+msgstr ""
+
+#: .\booking\models.py:25 .\templates\booking\booking_list.html:50
+msgid "Confirmed"
+msgstr ""
+
+#: .\booking\models.py:26 .\templates\booking\booking_list.html:51
+msgid "Cancelled"
+msgstr ""
+
+#: .\booking\models.py:27 .\payments\models.py:26
+#: .\templates\booking\booking_list.html:52
+msgid "Completed"
+msgstr ""
+
+#: .\booking\models.py:30 .\payments\models.py:31
+#: .\templates\booking\booking_list.html:46
+#: .\templates\users\booking_list.html:16
+#: .\templates\users\dashboard.html:175
+#: .\templates\users\payment_list.html:18
+msgid "Status"
+msgstr ""
+
+#: .\booking\models.py:37 .\core\models.py:85 .\payments\models.py:10
+msgid "Booking"
+msgstr ""
+
+#: .\booking\models.py:38
+msgid "Bookings"
+msgstr ""
+
+#: .\booking\views.py:71
+msgid "Tour information is missing."
+msgstr ""
+
+#: .\booking\views.py:102
+msgid "Booking initiated successfully! Please proceed to payment."
+msgstr ""
+
+#: .\booking\views.py:115 .\templates\booking\booking_form.html:5
+msgid "Create Booking"
+msgstr ""
+
+#: .\booking\views.py:136
+msgid "Booking updated successfully."
+msgstr ""
+
+#: .\booking\views.py:141 .\templates\booking\booking_form.html:5
+msgid "Update Booking"
+msgstr ""
+
+#: .\chatbots\apps.py:7
+msgid "Chatbots"
+msgstr ""
+
+#: .\chatbots\models.py:21
+msgid "Chat Session"
+msgstr ""
+
+#: .\chatbots\models.py:22
+msgid "Chat Sessions"
+msgstr ""
+
+#: .\chatbots\models.py:36
+msgid "Session"
+msgstr ""
+
+#: .\chatbots\models.py:40
+msgid "Bot"
+msgstr ""
+
+#: .\chatbots\models.py:45
+msgid "Sender Type"
+msgstr ""
+
+#: .\chatbots\models.py:47
+msgid "Message Text"
+msgstr ""
+
+#: .\chatbots\models.py:54
+msgid "Chat Message"
+msgstr ""
+
+#: .\chatbots\models.py:55
+msgid "Chat Messages"
+msgstr ""
+
+#: .\chatbots\views.py:16
+msgid "Sorry, I didn't understand that. Can you please rephrase?"
+msgstr ""
+
+#: .\chatbots\views.py:19
+msgid "Hello! How can I help you with our tours today?"
+msgstr ""
+
+#: .\chatbots\views.py:21
+msgid ""
+"You can find the price for each tour on its detail page. Would you like me "
+"to show you our tours?"
+msgstr ""
+
+#: .\chatbots\views.py:24
+msgid ""
+"To book a tour, please visit the tour's detail page and select an available "
+"date. Do you need help finding a specific tour?"
+msgstr ""
+
+#: .\chatbots\views.py:26
+msgid "You can find our contact information on the 'Contact Us' page."
+msgstr ""
+
+#: .\chatbots\views.py:29
+msgid "You're welcome! Is there anything else I can help you with?"
+msgstr ""
+
+#: .\core\admin.py:23
+msgid "Basic Information"
+msgstr ""
+
+#: .\core\admin.py:26
+msgid "Social Media"
+msgstr ""
+
+#: .\core\admin.py:52
+msgid "Mark selected messages as read"
+msgstr ""
+
+#: .\core\admin.py:56
+msgid "Mark selected messages as unread"
+msgstr ""
+
+#: .\core\admin.py:88
+msgid "Export selected emails as CSV"
+msgstr ""
+
+#: .\core\apps.py:7
+msgid "Core"
+msgstr ""
+
+#: .\core\forms.py:8 .\templates\core\contact.html:105
+msgid "Your Name"
+msgstr ""
+
+#: .\core\forms.py:10
+msgid "Enter your name"
+msgstr ""
+
+#: .\core\forms.py:13 .\templates\core\contact.html:118
+msgid "Your Email"
+msgstr ""
+
+#: .\core\forms.py:14 .\core\forms.py:31 .\templates\account\login.html:67
+#: .\templates\account\signup.html:87
+msgid "Enter your email"
+msgstr ""
+
+#: .\core\forms.py:17 .\core\models.py:68 .\templates\core\contact.html:132
+msgid "Subject"
+msgstr ""
+
+#: .\core\forms.py:19
+msgid "Enter subject"
+msgstr ""
+
+#: .\core\forms.py:22 .\core\models.py:69 .\core\models.py:94
+msgid "Message"
+msgstr ""
+
+#: .\core\forms.py:23
+msgid "Enter your message"
+msgstr ""
+
+#: .\core\models.py:24
+msgid "Site Name"
+msgstr ""
+
+#: .\core\models.py:25
+msgid "Site Logo"
+msgstr ""
+
+#: .\core\models.py:26
+msgid "Contact Email"
+msgstr ""
+
+#: .\core\models.py:27
+msgid "Contact Phone"
+msgstr ""
+
+#: .\core\models.py:28 .\users\models.py:45
+msgid "Address"
+msgstr ""
+
+#: .\core\models.py:29
+msgid "Facebook URL"
+msgstr ""
+
+#: .\core\models.py:30
+msgid "Twitter URL"
+msgstr ""
+
+#: .\core\models.py:31
+msgid "Instagram URL"
+msgstr ""
+
+#: .\core\models.py:32
+msgid "YouTube URL"
+msgstr ""
+
+#: .\core\models.py:35
+msgid "Default Currency"
+msgstr ""
+
+#: .\core\models.py:36 .\templates\base.html:523
+#: .\templates\base.html:670 .\templates\core\about.html:4
+#: .\templates\core\about.html:11
+msgid "About Us"
+msgstr ""
+
+#: .\core\models.py:37 .\templates\account\signup.html:165
+#: .\templates\base.html:738 .\templates\core\privacy.html:4
+#: .\templates\core\privacy.html:8
+msgid "Privacy Policy"
+msgstr ""
+
+#: .\core\models.py:38 .\templates\core\terms.html:4
+#: .\templates\core\terms.html:8
+msgid "Terms and Conditions"
+msgstr ""
+
+#: .\core\models.py:41
+msgid "Site Setting"
+msgstr ""
+
+#: .\core\models.py:42
+msgid "Site Settings"
+msgstr ""
+
+#: .\core\models.py:50 .\tour\models.py:259
+msgid "Question"
+msgstr ""
+
+#: .\core\models.py:51 .\tour\models.py:260
+msgid "Answer"
+msgstr ""
+
+#: .\core\models.py:52 .\tour\models.py:261
+msgid "Display Order"
+msgstr ""
+
+#: .\core\models.py:53 .\core\models.py:112 .\tour\models.py:19
+#: .\tour\models.py:61 .\tour\models.py:132 .\tour\models.py:204
+#: .\tour\models.py:225 .\tour\models.py:283
+msgid "Is Active"
+msgstr ""
+
+#: .\core\models.py:56 .\templates\base.html:714
+msgid "FAQ"
+msgstr ""
+
+#: .\core\models.py:57 .\templates\admin\tour\tour\import_form.html:153
+msgid "FAQs"
+msgstr ""
+
+#: .\core\models.py:70 .\core\models.py:96 .\reviews\models.py:27
+#: .\tour\models.py:20 .\tour\models.py:133
+msgid "Created At"
+msgstr ""
+
+#: .\core\models.py:71 .\core\models.py:97
+msgid "Is Read"
+msgstr ""
+
+#: .\core\models.py:74
+msgid "Contact Message"
+msgstr ""
+
+#: .\core\models.py:75
+msgid "Contact Messages"
+msgstr ""
+
+#: .\core\models.py:86 .\payments\models.py:37
+msgid "Payment"
+msgstr ""
+
+#: .\core\models.py:87
+msgid "System"
+msgstr ""
+
+#: .\core\models.py:88 .\tour\models.py:286
+msgid "Promotion"
+msgstr ""
+
+#: .\core\models.py:95
+msgid "Type"
+msgstr ""
+
+#: .\core\models.py:100
+msgid "Notification"
+msgstr ""
+
+#: .\core\models.py:101 .\templates\users\notification_list.html:4
+#: .\templates\users\notification_list.html:7
+msgid "Notifications"
+msgstr ""
+
+#: .\core\models.py:111
+msgid "Subscribed At"
+msgstr ""
+
+#: .\core\models.py:115
+msgid "Newsletter Subscriber"
+msgstr ""
+
+#: .\core\models.py:116
+msgid "Newsletter Subscribers"
+msgstr ""
+
+#: .\core\views.py:69
+msgid "Your message has been sent successfully. We will contact you soon!"
+msgstr ""
+
+#: .\core\views.py:90
+msgid "You have successfully subscribed to our newsletter!"
+msgstr ""
+
+#: .\core\views.py:92
+msgid "You are already subscribed to our newsletter."
+msgstr ""
+
+#: .\core\views.py:134
+msgid "Invalid currency selected."
+msgstr ""
+
+#: .\payments\forms.py:14 .\templates\payments\process_payment.html:36
+msgid "Select Payment Method"
+msgstr ""
+
+#: .\payments\models.py:11 .\templates\users\payment_list.html:16
+msgid "Amount"
+msgstr ""
+
+#: .\payments\models.py:15
+msgid "Stripe"
+msgstr ""
+
+#: .\payments\models.py:16
+msgid "PayPal"
+msgstr ""
+
+#: .\payments\models.py:19
+msgid "Payment Method"
+msgstr ""
+
+#: .\payments\models.py:21 .\templates\payments\payment_done.html:21
+#: .\templates\users\payment_list.html:19
+msgid "Transaction ID"
+msgstr ""
+
+#: .\payments\models.py:27
+msgid "Failed"
+msgstr ""
+
+#: .\payments\models.py:28
+msgid "Refunded"
+msgstr ""
+
+#: .\payments\models.py:38
+msgid "Payments"
+msgstr ""
+
+#: .\reviews\admin.py:15
+msgid "Approve selected reviews"
+msgstr ""
+
+#: .\reviews\admin.py:19
+msgid "Disapprove selected reviews"
+msgstr ""
+
+#: .\reviews\models.py:23 .\templates\reviews\add_review.html:10
+#: .\templates\tour\tour_detail.html:297
+msgid "Rating"
+msgstr ""
+
+#: .\reviews\models.py:28 .\tour\models.py:21 .\tour\models.py:134
+msgid "Updated At"
+msgstr ""
+
+#: .\reviews\models.py:29
+msgid "Is Approved"
+msgstr ""
+
+#: .\reviews\models.py:32 .\templates\users\dashboard.html:226
+msgid "Review"
+msgstr ""
+
+#: .\reviews\models.py:33 .\templates\tour\tour_detail.html:227
+msgid "Reviews"
+msgstr ""
+
+#: .\reviews\views.py:22
+msgid "You have already reviewed this tour."
+msgstr ""
+
+#: .\reviews\views.py:29
+msgid "Your review has been submitted and is pending approval."
+msgstr ""
+
+#: .\templates\account\login.html:5 .\templates\account\login.html:40
+#: .\templates\account\login.html:114
+msgid "Sign In"
+msgstr ""
+
+#: .\templates\account\login.html:5 .\templates\account\signup.html:5
+#: .\templates\base.html:6 .\templates\blog\post_detail.html:5
+#: .\templates\chatbots\chat_interface.html:4
+#: .\templates\core\about.html:4 .\templates\core\faq.html:4
+#: .\templates\core\home.html:4 .\templates\core\privacy.html:4
+#: .\templates\core\terms.html:4
+#: .\templates\payments\payment_cancelled.html:4
+#: .\templates\payments\payment_done.html:4
+#: .\templates\payments\process_payment.html:4
+#: .\templates\socialaccount\login.html:4
+#: .\templates\tour\tour_search.html:4
+msgid "Tourism Project"
+msgstr ""
+
+#: .\templates\account\login.html:14
+msgid "Welcome Back"
+msgstr ""
+
+#: .\templates\account\login.html:15
+msgid ""
+"Sign in to access your account and explore amazing travel destinations "
+"around the world."
+msgstr ""
+
+#: .\templates\account\login.html:18
+msgid "Discover the world with us"
+msgstr ""
+
+#: .\templates\account\login.html:22
+msgid "Exclusive travel deals"
+msgstr ""
+
+#: .\templates\account\login.html:26
+msgid "Personalized recommendations"
+msgstr ""
+
+#: .\templates\account\login.html:30
+msgid "Save your favorite destinations"
+msgstr ""
+
+#: .\templates\account\login.html:41
+msgid "Access your account to continue your journey"
+msgstr ""
+
+#: .\templates\account\login.html:50
+msgid "Please check your credentials and try again."
+msgstr ""
+
+#: .\templates\account\login.html:62 .\templates\account\signup.html:82
+msgid "Email Address"
+msgstr ""
+
+#: .\templates\account\login.html:77 .\templates\account\signup.html:122
+msgid "Password"
+msgstr ""
+
+#: .\templates\account\login.html:82
+msgid "Enter your password"
+msgstr ""
+
+#: .\templates\account\login.html:98
+msgid "Remember me"
+msgstr ""
+
+#: .\templates\account\login.html:103
+#: .\templates\account\password_change.html:57
+msgid "Forgot your password?"
+msgstr ""
+
+#: .\templates\account\login.html:126
+msgid "Or continue with"
+msgstr ""
+
+#: .\templates\account\login.html:151
+msgid "Don't have an account?"
+msgstr ""
+
+#: .\templates\account\login.html:153
+msgid "Sign up"
+msgstr ""
+
+#: .\templates\account\password_change.html:4
+#: .\templates\account\password_change.html:8
+#: .\templates\account\password_change.html:49
+msgid "Change Password"
+msgstr ""
+
+#: .\templates\account\password_change.html:12
+msgid "Error"
+msgstr ""
+
+#: .\templates\account\password_change.html:13
+#: .\templates\account\signup.html:69
+msgid "Please correct the errors below."
+msgstr ""
+
+#: .\templates\account\signup.html:5 .\templates\base.html:603
+msgid "Sign Up"
+msgstr ""
+
+#: .\templates\account\signup.html:59
+msgid "Join Our Community"
+msgstr ""
+
+#: .\templates\account\signup.html:60
+msgid "Create an account to start your journey"
+msgstr ""
+
+#: .\templates\account\signup.html:102
+msgid "Username"
+msgstr ""
+
+#: .\templates\account\signup.html:107
+msgid "Choose a username"
+msgstr ""
+
+#: .\templates\account\signup.html:127
+msgid "Create a password"
+msgstr ""
+
+#: .\templates\account\signup.html:135
+msgid "At least 8 characters with letters and numbers"
+msgstr ""
+
+#: .\templates\account\signup.html:144
+msgid "Confirm Password"
+msgstr ""
+
+#: .\templates\account\signup.html:149
+msgid "Confirm your password"
+msgstr ""
+
+#: .\templates\account\signup.html:165
+msgid "I agree to the"
+msgstr ""
+
+#: .\templates\account\signup.html:165
+msgid "Terms of Service"
+msgstr ""
+
+#: .\templates\account\signup.html:165
+#: .\venv\Lib\site-packages\django\db\models\base.py:1600
+#: .\venv\Lib\site-packages\django\forms\models.py:908
+msgid "and"
+msgstr ""
+
+#: .\templates\account\signup.html:176
+msgid "Create Account"
+msgstr ""
+
+#: .\templates\account\signup.html:188
+msgid "Or sign up with"
+msgstr ""
+
+#: .\templates\account\signup.html:213
+msgid "Already have an account?"
+msgstr ""
+
+#: .\templates\account\signup.html:215
+msgid "Sign in"
+msgstr ""
+
+#: .\templates\account\signup.html:225
+msgid "Start Your Adventure"
+msgstr ""
+
+#: .\templates\account\signup.html:226
+msgid ""
+"Join thousands of travelers discovering the world's most beautiful "
+"destinations."
+msgstr ""
+
+#: .\templates\account\signup.html:232
+msgid "Explore Destinations"
+msgstr ""
+
+#: .\templates\account\signup.html:234
+msgid "Access exclusive travel guides and insider tips."
+msgstr ""
+
+#: .\templates\account\signup.html:240
+msgid "Member Discounts"
+msgstr ""
+
+#: .\templates\account\signup.html:242
+msgid "Get special rates and early access to promotions."
+msgstr ""
+
+#: .\templates\account\signup.html:248
+msgid "Save Favorites"
+msgstr ""
+
+#: .\templates\account\signup.html:250
+msgid "Create your travel wishlist and plan your next trip."
+msgstr ""
+
+#: .\templates\account\signup.html:256
+msgid "Community"
+msgstr ""
+
+#: .\templates\account\signup.html:258
+msgid "Connect with fellow travelers and share experiences."
+msgstr ""
+
+#: .\templates\admin\tour\category\change_list.html:7
+#: .\templates\admin\tour\category\import_form.html:82
+#: .\templates\admin\tour\category\import_form.html:162 .\tour\admin.py:268
+msgid "Import Categories"
+msgstr ""
+
+#: .\templates\admin\tour\category\import_form.html:79
+#: .\templates\admin\tour\tour\import_form.html:134
+#: .\templates\base.html:511 .\templates\base.html:696
+#: .\templates\core\home.html:4
+msgid "Home"
+msgstr ""
+
+#: .\templates\admin\tour\category\import_form.html:89
+msgid "Import Categories from Excel/CSV"
+msgstr ""
+
+#: .\templates\admin\tour\category\import_form.html:92
+msgid "Download Sample File"
+msgstr ""
+
+#: .\templates\admin\tour\category\import_form.html:96
+msgid "Category Fields"
+msgstr ""
+
+#: .\templates\admin\tour\category\import_form.html:97
+msgid "The following fields are required or optional for each category:"
+msgstr ""
+
+#: .\templates\admin\tour\category\import_form.html:99
+msgid "Category name in English (required)"
+msgstr ""
+
+#: .\templates\admin\tour\category\import_form.html:100
+msgid "Category name in Arabic"
+msgstr ""
+
+#: .\templates\admin\tour\category\import_form.html:101
+msgid "Category name in French"
+msgstr ""
+
+#: .\templates\admin\tour\category\import_form.html:102
+msgid "Category name in German"
+msgstr ""
+
+#: .\templates\admin\tour\category\import_form.html:103
+#: .\templates\admin\tour\tour\import_form.html:166
+msgid "URL slug (will be auto-generated from name_en if empty)"
+msgstr ""
+
+#: .\templates\admin\tour\category\import_form.html:104
+msgid "Description in English"
+msgstr ""
+
+#: .\templates\admin\tour\category\import_form.html:105
+msgid "Description in Arabic"
+msgstr ""
+
+#: .\templates\admin\tour\category\import_form.html:106
+msgid "Description in French"
+msgstr ""
+
+#: .\templates\admin\tour\category\import_form.html:107
+msgid "Description in German"
+msgstr ""
+
+#: .\templates\admin\tour\category\import_form.html:108
+msgid "Active category (True/False)"
+msgstr ""
+
+#: .\templates\admin\tour\category\import_form.html:111
+msgid "Sample Data Format"
+msgstr ""
+
+#: .\templates\admin\tour\tour\change_list.html:7
+#: .\templates\admin\tour\tour\import_form.html:137 .\tour\admin.py:862
+msgid "Import Tours"
+msgstr ""
+
+#: .\templates\admin\tour\tour\import_form.html:144
+msgid "Import Tours from Excel/CSV"
+msgstr ""
+
+#: .\templates\admin\tour\tour\import_form.html:147
+msgid "Download Sample Excel File"
+msgstr ""
+
+#: .\templates\admin\tour\tour\import_form.html:151
+#: .\templates\base.html:515 .\templates\base.html:702
+#: .\templates\tour\category_detail.html:5
+#: .\templates\tour\tour_list.html:4 .\tour\models.py:139
+#: .\tour\models.py:276
+msgid "Tours"
+msgstr ""
+
+#: .\templates\admin\tour\tour\import_form.html:152
+#: .\templates\tour\tour_detail.html:133
+msgid "Itinerary"
+msgstr ""
+
+#: .\templates\admin\tour\tour\import_form.html:154
+#: .\templates\admin\tour\tour\import_form.html:231
+msgid "File Format"
+msgstr ""
+
+#: .\templates\admin\tour\tour\import_form.html:159
+msgid "Tour Fields"
+msgstr ""
+
+#: .\templates\admin\tour\tour\import_form.html:160
+msgid "The following fields are required or optional for each tour:"
+msgstr ""
+
+#: .\templates\admin\tour\tour\import_form.html:162
+msgid "Tour name in English (required)"
+msgstr ""
+
+#: .\templates\admin\tour\tour\import_form.html:163
+msgid "Tour name in Arabic"
+msgstr ""
+
+#: .\templates\admin\tour\tour\import_form.html:164
+msgid "Tour name in French"
+msgstr ""
+
+#: .\templates\admin\tour\tour\import_form.html:165
+msgid "Tour name in German"
+msgstr ""
+
+#: .\templates\admin\tour\tour\import_form.html:167
+msgid "Full description in English"
+msgstr ""
+
+#: .\templates\admin\tour\tour\import_form.html:168
+msgid "Full description in Arabic"
+msgstr ""
+
+#: .\templates\admin\tour\tour\import_form.html:169
+msgid "Full description in French"
+msgstr ""
+
+#: .\templates\admin\tour\tour\import_form.html:170
+msgid "Full description in German"
+msgstr ""
+
+#: .\templates\admin\tour\tour\import_form.html:171
+msgid "Short description in English"
+msgstr ""
+
+#: .\templates\admin\tour\tour\import_form.html:172
+msgid "Short description in Arabic"
+msgstr ""
+
+#: .\templates\admin\tour\tour\import_form.html:173
+msgid "Short description in French"
+msgstr ""
+
+#: .\templates\admin\tour\tour\import_form.html:174
+msgid "Short description in German"
+msgstr ""
+
+#: .\templates\admin\tour\tour\import_form.html:175
+msgid "Destination name (must exist in database)"
+msgstr ""
+
+#: .\templates\admin\tour\tour\import_form.html:176
+msgid "Categories (comma-separated, will be created if not exist)"
+msgstr ""
+
+#: .\templates\admin\tour\tour\import_form.html:177
+msgid "Tour price"
+msgstr ""
+
+#: .\templates\admin\tour\tour\import_form.html:178
+msgid "Discounted price (if any)"
+msgstr ""
+
+#: .\templates\admin\tour\tour\import_form.html:179
+msgid "Duration in days"
+msgstr ""
+
+#: .\templates\admin\tour\tour\import_form.html:180
+msgid "Maximum group size"
+msgstr ""
+
+#: .\templates\admin\tour\tour\import_form.html:181
+msgid "Minimum age requirement"
+msgstr ""
+
+#: .\templates\admin\tour\tour\import_form.html:182
+msgid "Difficulty level (easy, moderate, challenging)"
+msgstr ""
+
+#: .\templates\admin\tour\tour\import_form.html:183
+msgid "Featured tour (True/False)"
+msgstr ""
+
+#: .\templates\admin\tour\tour\import_form.html:184
+msgid "Active tour (True/False)"
+msgstr ""
+
+#: .\templates\admin\tour\tour\import_form.html:189
+msgid "Itinerary Fields"
+msgstr ""
+
+#: .\templates\admin\tour\tour\import_form.html:190
+msgid "For each day of the tour, include the following fields:"
+msgstr ""
+
+#: .\templates\admin\tour\tour\import_form.html:192
+#: .\templates\admin\tour\tour\import_form.html:217
+msgid "Tour name in English (to link with tour)"
+msgstr ""
+
+#: .\templates\admin\tour\tour\import_form.html:193
+msgid "Day number (1, 2, 3, etc.)"
+msgstr ""
+
+#: .\templates\admin\tour\tour\import_form.html:194
+msgid "Day title in English"
+msgstr ""
+
+#: .\templates\admin\tour\tour\import_form.html:195
+msgid "Day title in Arabic"
+msgstr ""
+
+#: .\templates\admin\tour\tour\import_form.html:196
+msgid "Day title in French"
+msgstr ""
+
+#: .\templates\admin\tour\tour\import_form.html:197
+msgid "Day title in German"
+msgstr ""
+
+#: .\templates\admin\tour\tour\import_form.html:198
+msgid "Day description in English"
+msgstr ""
+
+#: .\templates\admin\tour\tour\import_form.html:199
+msgid "Day description in Arabic"
+msgstr ""
+
+#: .\templates\admin\tour\tour\import_form.html:200
+msgid "Day description in French"
+msgstr ""
+
+#: .\templates\admin\tour\tour\import_form.html:201
+msgid "Day description in German"
+msgstr ""
+
+#: .\templates\admin\tour\tour\import_form.html:202
+msgid "Meals included in English (e.g., 'Breakfast, Lunch')"
+msgstr ""
+
+#: .\templates\admin\tour\tour\import_form.html:203
+msgid "Meals included in Arabic"
+msgstr ""
+
+#: .\templates\admin\tour\tour\import_form.html:204
+msgid "Meals included in French"
+msgstr ""
+
+#: .\templates\admin\tour\tour\import_form.html:205
+msgid "Meals included in German"
+msgstr ""
+
+#: .\templates\admin\tour\tour\import_form.html:206
+msgid "Accommodation details in English"
+msgstr ""
+
+#: .\templates\admin\tour\tour\import_form.html:207
+msgid "Accommodation details in Arabic"
+msgstr ""
+
+#: .\templates\admin\tour\tour\import_form.html:208
+msgid "Accommodation details in French"
+msgstr ""
+
+#: .\templates\admin\tour\tour\import_form.html:209
+msgid "Accommodation details in German"
+msgstr ""
+
+#: .\templates\admin\tour\tour\import_form.html:214
+msgid "FAQ Fields"
+msgstr ""
+
+#: .\templates\admin\tour\tour\import_form.html:215
+msgid "For each FAQ of the tour, include the following fields:"
+msgstr ""
+
+#: .\templates\admin\tour\tour\import_form.html:218
+msgid "Question in English"
+msgstr ""
+
+#: .\templates\admin\tour\tour\import_form.html:219
+msgid "Question in Arabic"
+msgstr ""
+
+#: .\templates\admin\tour\tour\import_form.html:220
+msgid "Question in French"
+msgstr ""
+
+#: .\templates\admin\tour\tour\import_form.html:221
+msgid "Question in German"
+msgstr ""
+
+#: .\templates\admin\tour\tour\import_form.html:222
+msgid "Answer in English"
+msgstr ""
+
+#: .\templates\admin\tour\tour\import_form.html:223
+msgid "Answer in Arabic"
+msgstr ""
+
+#: .\templates\admin\tour\tour\import_form.html:224
+msgid "Answer in French"
+msgstr ""
+
+#: .\templates\admin\tour\tour\import_form.html:225
+msgid "Answer in German"
+msgstr ""
+
+#: .\templates\admin\tour\tour\import_form.html:226
+msgid "Display order (numeric, lower numbers appear first)"
+msgstr ""
+
+#: .\templates\admin\tour\tour\import_form.html:232
+msgid "Your Excel file should have three sheets:"
+msgstr ""
+
+#: .\templates\admin\tour\tour\import_form.html:234
+msgid "Contains all tour information"
+msgstr ""
+
+#: .\templates\admin\tour\tour\import_form.html:235
+msgid "Contains day-by-day itinerary for all tours"
+msgstr ""
+
+#: .\templates\admin\tour\tour\import_form.html:236
+msgid "Contains FAQs for all tours"
+msgstr ""
+
+#: .\templates\admin\tour\tour\import_form.html:239
+msgid ""
+"Alternatively, you can use a CSV file with all fields in a single sheet, but "
+"this is more complex to manage."
+msgstr ""
+
+#: .\templates\admin\tour\tour\import_form.html:241
+msgid "Sample Excel Format:"
+msgstr ""
+
+#: .\templates\admin\tour\tour\import_form.html:242
+msgid "Sheet 1: Tours"
+msgstr ""
+
+#: .\templates\admin\tour\tour\import_form.html:266
+msgid "Sheet 2: Itinerary"
+msgstr ""
+
+#: .\templates\admin\tour\tour\import_form.html:286
+msgid "Sheet 3: FAQs"
+msgstr ""
+
+#: .\templates\admin\tour\tour\import_form.html:319
+msgid "Import"
+msgstr ""
+
+#: .\templates\admin\tour\tour\import_form.html:320
+msgid "Cancel"
+msgstr ""
+
+#: .\templates\base.html:356 .\templates\blog\post_list.html:4
+#: .\templates\tour\tour_detail.html:4 .\templates\tour\tour_list.html:4
+#: .\templates\users\wishlist.html:5
+msgid "Tourism Co."
+msgstr ""
+
+#: .\templates\base.html:475
+msgid "Loading..."
+msgstr ""
+
+#: .\templates\base.html:490
+msgid "Tourism"
+msgstr ""
+
+#: .\templates\base.html:491
+msgid "Co."
+msgstr ""
+
+#: .\templates\base.html:519 .\templates\base.html:708
+#: .\templates\blog\post_detail.html:5 .\templates\blog\post_list.html:4
+msgid "Blog"
+msgstr ""
+
+#: .\templates\base.html:527 .\templates\base.html:720
+msgid "Contact"
+msgstr ""
+
+#: .\templates\base.html:538
+msgid "User Avatar"
+msgstr ""
+
+#: .\templates\base.html:566 .\templates\base.html:923
+msgid "Dashboard"
+msgstr ""
+
+#: .\templates\base.html:570 .\users\views.py:46
+msgid "Update Profile"
+msgstr ""
+
+#: .\templates\base.html:574 .\templates\base.html:929
+#: .\templates\booking\booking_list.html:4
+#: .\templates\booking\booking_list.html:9
+#: .\templates\users\booking_list.html:4
+#: .\templates\users\booking_list.html:7
+msgid "My Bookings"
+msgstr ""
+
+#: .\templates\base.html:579 .\templates\base.html:933
+msgid "Admin Panel"
+msgstr ""
+
+#: .\templates\base.html:587 .\templates\base.html:938
+msgid "Logout"
+msgstr ""
+
+#: .\templates\base.html:599
+msgid "Login"
+msgstr ""
+
+#: .\templates\base.html:675
+msgid ""
+"Your adventure starts here. Discover amazing tours and destinations with our "
+"expert guides."
+msgstr ""
+
+#: .\templates\base.html:691
+msgid "Quick Links"
+msgstr ""
+
+#: .\templates\base.html:727
+msgid "Legal"
+msgstr ""
+
+#: .\templates\base.html:732
+msgid "Terms & Conditions"
+msgstr ""
+
+#: .\templates\base.html:744
+msgid "Cookie Policy"
+msgstr ""
+
+#: .\templates\base.html:750
+msgid "Refund Policy"
+msgstr ""
+
+#: .\templates\base.html:757 .\templates\core\home.html:281
+msgid "Contact Us"
+msgstr ""
+
+#: .\templates\base.html:774
+msgid "Subscribe to Newsletter"
+msgstr ""
+
+#: .\templates\base.html:776
+msgid "Your email"
+msgstr ""
+
+#: .\templates\base.html:786
+msgid "Tourism Co. All rights reserved."
+msgstr ""
+
+#: .\templates\base.html:797
+msgid "Tour Assistant"
+msgstr ""
+
+#: .\templates\base.html:805
+msgid "Hello! How can I help you with your travel plans today?"
+msgstr ""
+
+#: .\templates\base.html:809 .\templates\chatbots\chat_interface.html:57
+msgid "Type your message..."
+msgstr ""
+
+#: .\templates\base.html:887
+msgid "Thanks for your message! Our team will help you with that shortly."
+msgstr ""
+
+#: .\templates\base.html:888
+msgid "Great question! We have many tours that might interest you."
+msgstr ""
+
+#: .\templates\base.html:889
+msgid "I recommend checking our featured tours for the best experiences."
+msgstr ""
+
+#: .\templates\base.html:890
+msgid "Would you like me to help you book a tour?"
+msgstr ""
+
+#: .\templates\base.html:926
+msgid "Profile"
+msgstr ""
+
+#: .\templates\blog\partials\comment.html:25
+#: .\templates\chatbots\chat_interface.html:32
+#: .\templates\users\notification_list.html:24
+msgid "ago"
+msgstr ""
+
+#: .\templates\blog\partials\comment.html:31
+msgid "Reply"
+msgstr ""
+
+#: .\templates\blog\partials\post_card.html:9
+#: .\templates\blog\partials\post_card_minimal.html:9
+#: .\templates\tour\partials\tour_card.html:8
+#: .\templates\tour\partials\tour_card_minimal.html:8
+msgid "Placeholder Image"
+msgstr ""
+
+#: .\templates\blog\partials\post_card.html:36
+msgid "By"
+msgstr ""
+
+#: .\templates\blog\post_detail.html:28
+msgid "Unknown Author"
+msgstr ""
+
+#: .\templates\blog\post_detail.html:43
+msgid "Views"
+msgstr ""
+
+#: .\templates\blog\post_detail.html:83
+msgid "Leave a Comment"
+msgstr ""
+
+#: .\templates\blog\post_detail.html:87
+#, python-format
+msgid "Commenting as <strong>%(user_name)s</strong>."
+msgstr ""
+
+#: .\templates\blog\post_detail.html:87
+msgid "Logout?"
+msgstr ""
+
+#: .\templates\blog\post_detail.html:96
+msgid "Post Comment"
+msgstr ""
+
+#: .\templates\blog\post_detail.html:101
+msgid "Join the conversation"
+msgstr ""
+
+#: .\templates\blog\post_detail.html:102
+msgid "You must be logged in to post a comment."
+msgstr ""
+
+#: .\templates\blog\post_detail.html:105
+msgid "Log In"
+msgstr ""
+
+#: .\templates\blog\post_detail.html:108
+msgid "Register"
+msgstr ""
+
+#: .\templates\blog\post_detail.html:119
+msgid "No comments yet. Be the first to comment!"
+msgstr ""
+
+#: .\templates\blog\post_detail.html:165
+msgid "Related Posts"
+msgstr ""
+
+#: .\templates\blog\post_detail.html:188
+msgid "Reply to"
+msgstr ""
+
+#: .\templates\blog\post_list.html:9
+msgid "Our Travel Blog"
+msgstr ""
+
+#: .\templates\blog\post_list.html:10
+msgid ""
+"Discover travel tips, destination guides, and stories from around the world"
+msgstr ""
+
+#: .\templates\blog\post_list.html:23
+msgid "Search articles..."
+msgstr ""
+
+#: .\templates\blog\post_list.html:33
+msgid "All"
+msgstr ""
+
+#: .\templates\blog\post_list.html:85
+msgid "Travel Expert"
+msgstr ""
+
+#: .\templates\blog\post_list.html:89
+msgid "Read More"
+msgstr ""
+
+#: .\templates\blog\post_list.html:117
+msgid "min read"
+msgstr ""
+
+#: .\templates\blog\post_list.html:135
+msgid "Read"
+msgstr ""
+
+#: .\templates\blog\post_list.html:151
+#: .\templates\booking\booking_form.html:90
+#: .\templates\booking\booking_form.html:118
+#: .\templates\booking\booking_list.html:128
+#: .\templates\partials\pagination.html:13
+#: .\templates\tour\category_list.html:45
+#: .\templates\tour\destination_list.html:41
+#: .\templates\tour\tour_list.html:118
+#: .\templates\tour\tour_search.html:53
+msgid "Previous"
+msgstr ""
+
+#: .\templates\blog\post_list.html:162
+#: .\templates\booking\booking_form.html:66
+#: .\templates\booking\booking_form.html:94
+#: .\templates\booking\booking_list.html:149
+#: .\templates\partials\pagination.html:37
+#: .\templates\tour\category_list.html:69
+#: .\templates\tour\destination_list.html:65
+#: .\templates\tour\tour_list.html:129
+#: .\templates\tour\tour_search.html:72
+msgid "Next"
+msgstr ""
+
+#: .\templates\blog\post_list.html:175
+msgid "No posts found"
+msgstr ""
+
+#: .\templates\blog\post_list.html:176
+msgid "We couldn't find any blog posts matching your criteria."
+msgstr ""
+
+#: .\templates\blog\post_list.html:178
+#: .\templates\tour\tour_list.html:145
+msgid "Clear filters"
+msgstr ""
+
+#: .\templates\blog\post_list.html:188
+msgid "Subscribe to Our Newsletter"
+msgstr ""
+
+#: .\templates\blog\post_list.html:189
+msgid ""
+"Get the latest travel tips, destination guides, and exclusive offers "
+"directly to your inbox."
+msgstr ""
+
+#: .\templates\blog\post_list.html:193 .\templates\core\home.html:296
+msgid "Your email address"
+msgstr ""
+
+#: .\templates\blog\post_list.html:195 .\templates\core\home.html:298
+msgid "Subscribe"
+msgstr ""
+
+#: .\templates\blog\post_list.html:204
+msgid "Popular Tags"
+msgstr ""
+
+#: .\templates\blog\post_list.html:211
+msgid "No tags available"
+msgstr ""
+
+#: .\templates\booking\booking_detail.html:4
+#: .\templates\booking\booking_detail.html:12
+msgid "Booking Details"
+msgstr ""
+
+#: .\templates\booking\booking_detail.html:28
+msgid "Booking Information"
+msgstr ""
+
+#: .\templates\booking\booking_detail.html:32
+msgid "Booking Number:"
+msgstr ""
+
+#: .\templates\booking\booking_detail.html:37
+msgid "Booking Date:"
+msgstr ""
+
+#: .\templates\booking\booking_detail.html:42
+msgid "Total Amount:"
+msgstr ""
+
+#: .\templates\booking\booking_detail.html:50
+msgid "Tour Information"
+msgstr ""
+
+#: .\templates\booking\booking_detail.html:54
+msgid "Tour:"
+msgstr ""
+
+#: .\templates\booking\booking_detail.html:59
+msgid "Start Date:"
+msgstr ""
+
+#: .\templates\booking\booking_detail.html:64
+msgid "Travelers:"
+msgstr ""
+
+#: .\templates\booking\booking_detail.html:74
+msgid "Traveler Details"
+msgstr ""
+
+#: .\templates\booking\booking_detail.html:87
+msgid "Phone"
+msgstr ""
+
+#: .\templates\booking\booking_detail.html:118
+msgid "Back to Bookings"
+msgstr ""
+
+#: .\templates\booking\booking_detail.html:124
+msgid "Edit Booking"
+msgstr ""
+
+#: .\templates\booking\booking_detail.html:128
+#: .\templates\booking\booking_detail.html:140
+msgid "Cancel Booking"
+msgstr ""
+
+#: .\templates\booking\booking_detail.html:141
+msgid ""
+"Are you sure you want to cancel this booking? This action cannot be undone."
+msgstr ""
+
+#: .\templates\booking\booking_detail.html:145
+msgid "No, Keep It"
+msgstr ""
+
+#: .\templates\booking\booking_detail.html:150
+msgid "Yes, Cancel"
+msgstr ""
+
+#: .\templates\booking\booking_form.html:13
+msgid "Update Your Booking"
+msgstr ""
+
+#: .\templates\booking\booking_form.html:15
+msgid "Book Your Tour"
+msgstr ""
+
+#: .\templates\booking\booking_form.html:26
+msgid ""
+"Please fill out the form below to complete your booking. Fields marked with "
+"* are required."
+msgstr ""
+
+#: .\templates\booking\booking_form.html:38
+msgid "Step"
+msgstr ""
+
+#: .\templates\booking\booking_form.html:38
+msgid "of"
+msgstr ""
+
+#: .\templates\booking\booking_form.html:57
+msgid "Tour Details"
+msgstr ""
+
+#: .\templates\booking\booking_form.html:81
+msgid "Traveler Information"
+msgstr ""
+
+#: .\templates\booking\booking_form.html:109
+msgid "Payment Information"
+msgstr ""
+
+#: .\templates\booking\booking_form.html:122
+msgid "Complete Booking"
+msgstr ""
+
+#: .\templates\booking\booking_list.html:19
+msgid ""
+"View and manage all your bookings. Click on a booking to see more details."
+msgstr ""
+
+#: .\templates\booking\booking_list.html:29
+msgid "Filter Bookings"
+msgstr ""
+
+#: .\templates\booking\booking_list.html:48
+msgid "All Statuses"
+msgstr ""
+
+#: .\templates\booking\booking_list.html:57
+msgid "From Date"
+msgstr ""
+
+#: .\templates\booking\booking_list.html:62
+msgid "To Date"
+msgstr ""
+
+#: .\templates\booking\booking_list.html:68
+#: .\templates\tour\category_detail.html:77
+#: .\templates\tour\tour_list.html:97
+msgid "Apply Filters"
+msgstr ""
+
+#: .\templates\booking\booking_list.html:103
+#: .\templates\users\dashboard.html:61
+#: .\templates\users\dashboard.html:125
+msgid "travelers"
+msgstr ""
+
+#: .\templates\booking\booking_list.html:112
+msgid "Booked on"
+msgstr ""
+
+#: .\templates\booking\booking_list.html:113
+#: .\templates\tour\category_detail.html:144
+#: .\templates\tour\partials\tour_card.html:74
+#: .\templates\users\booking_list.html:37
+#: .\templates\users\notification_list.html:29
+#: .\templates\users\wishlist.html:189
+#: .\templates\users\wishlist.html:297
+msgid "View Details"
+msgstr ""
+
+#: .\templates\booking\booking_list.html:124
+#: .\templates\tour\tour_search.html:50
+msgid "Pagination"
+msgstr ""
+
+#: .\templates\booking\booking_list.html:161
+msgid "No Bookings Found"
+msgstr ""
+
+#: .\templates\booking\booking_list.html:162
+msgid ""
+"You haven't made any bookings yet. Start exploring our tours and plan your "
+"next adventure!"
+msgstr ""
+
+#: .\templates\booking\booking_list.html:164
+#: .\templates\users\wishlist.html:319
+msgid "Explore Tours"
+msgstr ""
+
+#: .\templates\chatbots\chat_interface.html:4
+#: .\templates\chatbots\chat_interface.html:18
+msgid "Chat Support"
+msgstr ""
+
+#: .\templates\chatbots\chat_interface.html:48
+msgid "Bot is typing..."
+msgstr ""
+
+#: .\templates\chatbots\chat_interface.html:63
+msgid "Send"
+msgstr ""
+
+#: .\templates\chatbots\chat_interface.html:143
+msgid "Sorry, an error occurred. Please try again."
+msgstr ""
+
+#: .\templates\core\about.html:13
+msgid ""
+"Discover the story behind our passion for creating unforgettable travel "
+"experiences"
+msgstr ""
+
+#: .\templates\core\about.html:22 .\templates\core\about.html:32
+msgid "Our Story"
+msgstr ""
+
+#: .\templates\core\about.html:33
+msgid ""
+"Welcome to our tourism company! We are dedicated to providing exceptional "
+"travel experiences that inspire and enrich lives."
+msgstr ""
+
+#: .\templates\core\about.html:34
+msgid ""
+"Founded in 2010, our journey began with a simple vision: to create "
+"meaningful connections between travelers and destinations."
+msgstr ""
+
+#: .\templates\core\about.html:35
+msgid "Our Mission"
+msgstr ""
+
+#: .\templates\core\about.html:36
+msgid ""
+"We strive to offer sustainable, authentic, and unforgettable journeys that "
+"respect local cultures and environments while delivering exceptional value "
+"to our customers."
+msgstr ""
+
+#: .\templates\core\about.html:45
+msgid "Our Values"
+msgstr ""
+
+#: .\templates\core\about.html:54
+msgid "Excellence"
+msgstr ""
+
+#: .\templates\core\about.html:55
+msgid "We are committed to excellence in every aspect of our service."
+msgstr ""
+
+#: .\templates\core\about.html:65
+msgid "Sustainability"
+msgstr ""
+
+#: .\templates\core\about.html:66
+msgid ""
+"We prioritize sustainable practices that protect the destinations we love."
+msgstr ""
+
+#: .\templates\core\about.html:77
+msgid "Authenticity"
+msgstr ""
+
+#: .\templates\core\about.html:78
+msgid ""
+"We create genuine experiences that showcase the true spirit of each "
+"destination."
+msgstr ""
+
+#: .\templates\core\about.html:86
+msgid "Our Team"
+msgstr ""
+
+#: .\templates\core\about.html:99 .\templates\core\about.html:106
+msgid "Team Member"
+msgstr ""
+
+#: .\templates\core\about.html:101
+msgid "Sarah Johnson"
+msgstr ""
+
+#: .\templates\core\about.html:102
+msgid "Founder & CEO"
+msgstr ""
+
+#: .\templates\core\about.html:108
+msgid "Mohammed Ali"
+msgstr ""
+
+#: .\templates\core\about.html:109
+msgid "Travel Director"
+msgstr ""
+
+#: .\templates\core\about.html:119
+msgid "Ready to Start Your Journey?"
+msgstr ""
+
+#: .\templates\core\about.html:121
+msgid "Contact Us Today"
+msgstr ""
+
+#: .\templates\core\contact.html:15
+msgid "Get in Touch"
+msgstr ""
+
+#: .\templates\core\contact.html:18
+msgid ""
+"Have questions about our tours or need assistance planning your trip? We're "
+"here to help!"
+msgstr ""
+
+#: .\templates\core\contact.html:35
+msgid "Our Location"
+msgstr ""
+
+#: .\templates\core\contact.html:38
+msgid "View on Map"
+msgstr ""
+
+#: .\templates\core\contact.html:51 .\templates\tour\tour_detail.html:492
+msgid "Call Us"
+msgstr ""
+
+#: .\templates\core\contact.html:54
+msgid "Mon-Fri: 9AM to 6PM"
+msgstr ""
+
+#: .\templates\core\contact.html:66 .\templates\tour\tour_detail.html:502
+msgid "Email Us"
+msgstr ""
+
+#: .\templates\core\contact.html:69
+msgid "We respond within 24 hours"
+msgstr ""
+
+#: .\templates\core\contact.html:76
+msgid "Connect With Us"
+msgstr ""
+
+#: .\templates\core\contact.html:97
+msgid "Send Us a Message"
+msgstr ""
+
+#: .\templates\core\contact.html:112 .\templates\core\home.html:212
+msgid "John Doe"
+msgstr ""
+
+#: .\templates\core\contact.html:125
+msgid "your@email.com"
+msgstr ""
+
+#: .\templates\core\contact.html:139
+msgid "How can we help you?"
+msgstr ""
+
+#: .\templates\core\contact.html:145
+msgid "Your Message"
+msgstr ""
+
+#: .\templates\core\contact.html:152
+msgid "Please describe your inquiry in detail..."
+msgstr ""
+
+#: .\templates\core\contact.html:160
+msgid "Send Message"
+msgstr ""
+
+#: .\templates\core\contact.html:173
+msgid "Find Us"
+msgstr ""
+
+#: .\templates\core\contact.html:174
+msgid "Visit our office or plan your trip to one of our destinations"
+msgstr ""
+
+#: .\templates\core\contact.html:187 .\templates\core\faq.html:4
+#: .\templates\core\faq.html:8 .\templates\tour\tour_detail.html:524
+msgid "Frequently Asked Questions"
+msgstr ""
+
+#: .\templates\core\contact.html:188
+msgid "Find quick answers to common questions about our services"
+msgstr ""
+
+#: .\templates\core\contact.html:197
+msgid "How do I book a tour?"
+msgstr ""
+
+#: .\templates\core\contact.html:201
+msgid ""
+"You can book a tour directly through our website by selecting your desired "
+"tour, choosing your dates, and completing the booking form. Alternatively, "
+"you can contact our customer service team who will assist you with the "
+"booking process."
+msgstr ""
+
+#: .\templates\core\contact.html:209
+msgid "What is your cancellation policy?"
+msgstr ""
+
+#: .\templates\core\contact.html:213
+#, python-format
+msgid ""
+"Our standard cancellation policy allows for a full refund if cancelled 30 "
+"days before the tour date. Cancellations made 15-29 days before receive a "
+"50%% refund. Cancellations less than 15 days before the tour are non-"
+"refundable. Some tours may have specific policies, which will be clearly "
+"indicated during booking."
+msgstr ""
+
+#: .\templates\core\contact.html:221
+msgid "Do you offer group discounts?"
+msgstr ""
+
+#: .\templates\core\contact.html:225
+msgid ""
+"Yes, we offer discounts for group bookings. The discount amount varies "
+"depending on the size of the group and the specific tour. Please contact our "
+"team for more information about group rates and special arrangements."
+msgstr ""
+
+#: .\templates\core\faq.html:32
+msgid "No frequently asked questions available at the moment."
+msgstr ""
+
+#: .\templates\core\home.html:31
+msgid "Discover Your Dream Destination"
+msgstr ""
+
+#: .\templates\core\home.html:32
+msgid ""
+"Unforgettable experiences and breathtaking adventures await you around the "
+"world."
+msgstr ""
+
+#: .\templates\core\home.html:37
+msgid "Search for Adventures"
+msgstr ""
+
+#: .\templates\core\home.html:56
+msgid "Explore Exotic Locations"
+msgstr ""
+
+#: .\templates\core\home.html:57
+msgid "From tropical beaches to mountain peaks, find your perfect escape."
+msgstr ""
+
+#: .\templates\core\home.html:58
+msgid "Browse Popular Tours"
+msgstr ""
+
+#: .\templates\core\home.html:76
+msgid "Immerse in Local Culture"
+msgstr ""
+
+#: .\templates\core\home.html:77
+msgid "Authentic experiences curated by expert local guides."
+msgstr ""
+
+#: .\templates\core\home.html:78
+msgid "See Cultural Tours"
+msgstr ""
+
+#: .\templates\core\home.html:132
+msgid "Where do you want to go?"
+msgstr ""
+
+#: .\templates\core\home.html:136
+msgid "Find Adventures"
+msgstr ""
+
+#: .\templates\core\home.html:149 .\templates\users\wishlist.html:322
+msgid "Featured Tours"
+msgstr ""
+
+#: .\templates\core\home.html:151
+msgid "View All"
+msgstr ""
+
+#: .\templates\core\home.html:169
+msgid "Explore by Category"
+msgstr ""
+
+#: .\templates\core\home.html:170
+msgid "Find the perfect tour experience tailored to your interests"
+msgstr ""
+
+#: .\templates\core\home.html:189
+msgid "Explore"
+msgstr ""
+
+#: .\templates\core\home.html:201
+msgid "What Our Travelers Say"
+msgstr ""
+
+#: .\templates\core\home.html:202
+msgid "Read the experiences shared by travelers from around the world"
+msgstr ""
+
+#: .\templates\core\home.html:208
+msgid ""
+"The tour was absolutely amazing! Our guide was knowledgeable and friendly. I "
+"couldn't have asked for a better experience exploring the beautiful "
+"landscapes."
+msgstr ""
+
+#: .\templates\core\home.html:213
+msgid "Paris Tour"
+msgstr ""
+
+#: .\templates\core\home.html:221
+msgid ""
+"This was the trip of a lifetime! Every detail was perfectly arranged, from "
+"accommodations to activities. I'll definitely book with this company again!"
+msgstr ""
+
+#: .\templates\core\home.html:225
+msgid "Jane Smith"
+msgstr ""
+
+#: .\templates\core\home.html:226
+msgid "Japan Adventure"
+msgstr ""
+
+#: .\templates\core\home.html:234
+msgid ""
+"The cultural immersion was incredible. I learned so much about the local "
+"traditions and history. The food experiences alone were worth the trip!"
+msgstr ""
+
+#: .\templates\core\home.html:238
+msgid "Michael Rodriguez"
+msgstr ""
+
+#: .\templates\core\home.html:239
+msgid "Thailand Discovery"
+msgstr ""
+
+#: .\templates\core\home.html:251
+msgid "Travel Inspiration"
+msgstr ""
+
+#: .\templates\core\home.html:252
+msgid "Stories and tips from our travel experts"
+msgstr ""
+
+#: .\templates\core\home.html:262
+msgid "Explore All Articles"
+msgstr ""
+
+#: .\templates\core\home.html:274
+msgid "Ready for Your Next Adventure?"
+msgstr ""
+
+#: .\templates\core\home.html:275
+msgid ""
+"Join thousands of satisfied travelers and book your dream tour today. "
+"Special discounts available for early bookings!"
+msgstr ""
+
+#: .\templates\core\home.html:278
+msgid "Browse Tours"
+msgstr ""
+
+#: .\templates\core\home.html:292
+msgid "Get Travel Inspiration"
+msgstr ""
+
+#: .\templates\core\home.html:293
+msgid ""
+"Subscribe to our newsletter for exclusive deals, travel tips, and "
+"destination guides"
+msgstr ""
+
+#: .\templates\core\home.html:301
+msgid "We respect your privacy. Unsubscribe at any time."
+msgstr ""
+
+#: .\templates\core\privacy.html:14
+msgid "Your privacy is important to us..."
+msgstr ""
+
+#: .\templates\core\terms.html:14
+msgid "Please read these terms and conditions carefully..."
+msgstr ""
+
+#: .\templates\payments\payment_cancelled.html:4
+msgid "Payment Cancelled"
+msgstr ""
+
+#: .\templates\payments\payment_cancelled.html:13
+msgid "Payment Cancelled or Failed"
+msgstr ""
+
+#: .\templates\payments\payment_cancelled.html:14
+msgid "Your payment was not completed. Your booking status remains pending."
+msgstr ""
+
+#: .\templates\payments\payment_cancelled.html:17
+#: .\templates\payments\payment_done.html:26
+msgid "Go to Dashboard"
+msgstr ""
+
+#: .\templates\payments\payment_cancelled.html:21
+msgid "View Booking"
+msgstr ""
+
+#: .\templates\payments\payment_done.html:4
+msgid "Payment Successful"
+msgstr ""
+
+#: .\templates\payments\payment_done.html:13
+msgid "Payment Successful!"
+msgstr ""
+
+#: .\templates\payments\payment_done.html:14
+msgid ""
+"Your payment has been processed successfully and your booking is confirmed."
+msgstr ""
+
+#: .\templates\payments\payment_done.html:19
+#: .\templates\payments\process_payment.html:15
+#: .\templates\users\payment_list.html:15
+msgid "Booking ID"
+msgstr ""
+
+#: .\templates\payments\payment_done.html:20
+msgid "Amount Paid"
+msgstr ""
+
+#: .\templates\payments\payment_done.html:31
+msgid "View Booking Details"
+msgstr ""
+
+#: .\templates\payments\process_payment.html:4
+msgid "Process Payment"
+msgstr ""
+
+#: .\templates\payments\process_payment.html:8
+msgid "Complete Your Payment"
+msgstr ""
+
+#: .\templates\payments\process_payment.html:12
+msgid "Booking Summary"
+msgstr ""
+
+#: .\templates\payments\process_payment.html:23
+#: .\templates\users\booking_list.html:15
+#: .\templates\users\dashboard.html:172
+#: .\templates\users\payment_list.html:14
+msgid "Date"
+msgstr ""
+
+#: .\templates\payments\process_payment.html:27
+msgid "Total Amount"
+msgstr ""
+
+#: .\templates\payments\process_payment.html:56
+msgid "Proceed to Secure Payment"
+msgstr ""
+
+#: .\templates\reviews\add_review.html:6
+msgid "Add Review"
+msgstr ""
+
+#: .\templates\reviews\add_review.html:18
+#: .\templates\tour\tour_detail.html:313
+msgid "Submit Review"
+msgstr ""
+
+#: .\templates\socialaccount\login.html:4
+msgid "Social Sign In"
+msgstr ""
+
+#: .\templates\socialaccount\login.html:12
+msgid "Sign in with"
+msgstr ""
+
+#: .\templates\socialaccount\login.html:15
+#, python-format
+msgid ""
+"\n"
+"          You're about to sign in using your %(provider_name)s account.\n"
+"          "
+msgstr ""
+
+#: .\templates\socialaccount\login.html:23
+msgid "Authentication Error"
+msgstr ""
+
+#: .\templates\socialaccount\login.html:35
+msgid ""
+"This error typically occurs when the OAuth client is not properly "
+"configured. Please make sure you have:"
+msgstr ""
+
+#: .\templates\socialaccount\login.html:37
+msgid "Registered your application with the provider"
+msgstr ""
+
+#: .\templates\socialaccount\login.html:38
+msgid "Added the social application in Django admin"
+msgstr ""
+
+#: .\templates\socialaccount\login.html:39
+msgid "Configured the correct client ID and secret"
+msgstr ""
+
+#: .\templates\socialaccount\login.html:53
+msgid "Continue with Google"
+msgstr ""
+
+#: .\templates\socialaccount\login.html:58
+msgid "Continue with Facebook"
+msgstr ""
+
+#: .\templates\socialaccount\login.html:63
+msgid "Continue with Twitter"
+msgstr ""
+
+#: .\templates\socialaccount\login.html:68
+msgid "Continue with"
+msgstr ""
+
+#: .\templates\socialaccount\login.html:77
+msgid "Back to login"
+msgstr ""
+
+#: .\templates\tour\category_detail.html:28
+msgid "Filter Tours"
+msgstr ""
+
+#: .\templates\tour\category_detail.html:31
+#: .\templates\tour\tour_list.html:24 .\tour\forms.py:15 .\tour\models.py:24
+#: .\tour\models.py:40 .\tour\models.py:106
+msgid "Destination"
+msgstr ""
+
+#: .\templates\tour\category_detail.html:33 .\tour\forms.py:18
+msgid "All Destinations"
+msgstr ""
+
+#: .\templates\tour\category_detail.html:43
+#: .\templates\tour\tour_list.html:49
+msgid "Price Range"
+msgstr ""
+
+#: .\templates\tour\category_detail.html:45 .\tour\forms.py:33
+msgid "Min"
+msgstr ""
+
+#: .\templates\tour\category_detail.html:48
+#: .\templates\tour\tour_detail.html:97
+#: .\templates\tour\tour_detail.html:376
+#: .\templates\users\wishlist.html:177
+#: .\templates\users\wishlist.html:285 .\tour\forms.py:39
+msgid "Max"
+msgstr ""
+
+#: .\templates\tour\category_detail.html:55
+#: .\templates\tour\tour_list.html:84 .\tour\forms.py:58
+msgid "Sort By"
+msgstr ""
+
+#: .\templates\tour\category_detail.html:58
+#: .\templates\tour\tour_list.html:90 .\tour\forms.py:50
+msgid "Newest"
+msgstr ""
+
+#: .\templates\tour\category_detail.html:61
+#: .\templates\users\wishlist.html:81 .\tour\forms.py:51
+msgid "Price (Low to High)"
+msgstr ""
+
+#: .\templates\tour\category_detail.html:64
+#: .\templates\users\wishlist.html:82 .\tour\forms.py:52
+msgid "Price (High to Low)"
+msgstr ""
+
+#: .\templates\tour\category_detail.html:67 .\tour\forms.py:53
+msgid "Name (A-Z)"
+msgstr ""
+
+#: .\templates\tour\category_detail.html:70
+#: .\templates\tour\tour_list.html:86 .\tour\forms.py:54
+msgid "Popularity"
+msgstr ""
+
+#: .\templates\tour\category_detail.html:84
+#: .\templates\tour\destination_detail.html:26
+msgid "Tours in"
+msgstr ""
+
+#: .\templates\tour\category_detail.html:96
+#: .\templates\tour\category_list.html:25
+#: .\templates\tour\destination_detail.html:37
+#: .\templates\tour\destination_list.html:20
+msgid "No Image"
+msgstr ""
+
+#: .\templates\tour\category_detail.html:107
+#: .\templates\tour\tour_detail.html:40
+#: .\templates\tour\tour_detail.html:371
+#: .\templates\tour\tour_list.html:40 .\templates\tour\tour_list.html:41
+#: .\templates\tour\tour_list.html:42 .\templates\tour\tour_list.html:43
+#: .\templates\users\dashboard.html:206
+#: .\templates\users\wishlist.html:164
+#: .\templates\users\wishlist.html:272
+msgid "days"
+msgstr ""
+
+#: .\templates\tour\category_detail.html:107
+msgid "nights"
+msgstr ""
+
+#: .\templates\tour\category_detail.html:140
+#: .\templates\tour\tour_detail.html:365
+msgid "person"
+msgstr ""
+
+#: .\templates\tour\category_detail.html:153
+msgid "No tours found for this category. Please try a different filter."
+msgstr ""
+
+#: .\templates\tour\category_list.html:5
+msgid "Tour Categories"
+msgstr ""
+
+#: .\templates\tour\category_list.html:9
+msgid "Explore Tour Categories"
+msgstr ""
+
+#: .\templates\tour\category_list.html:79
+msgid "No categories found."
+msgstr ""
+
+#: .\templates\tour\destination_detail.html:42
+#, python-format
+msgid "Duration: %(duration)s days"
+msgstr ""
+
+#: .\templates\tour\destination_detail.html:76
+#, python-format
+msgid "No tours currently available for %(destination_name)s."
+msgstr ""
+
+#: .\templates\tour\destination_detail.html:80
+msgid "← Back to all destinations"
+msgstr ""
+
+#: .\templates\tour\destination_list.html:5 .\tour\models.py:25
+msgid "Destinations"
+msgstr ""
+
+#: .\templates\tour\destination_list.html:9
+msgid "Explore Our Destinations"
+msgstr ""
+
+#: .\templates\tour\destination_list.html:75
+msgid "No destinations found."
+msgstr ""
+
+#: .\templates\tour\partials\tour_card.html:14
+msgid "Special Offer"
+msgstr ""
+
+#: .\templates\tour\partials\tour_card.html:39
+#, python-format
+msgid "%(days)s Days / %(nights)s Nights"
+msgstr ""
+
+#: .\templates\tour\partials\tour_card.html:68
+msgid "per person"
+msgstr ""
+
+#: .\templates\tour\partials\tour_card_minimal.html:16
+#, python-format
+msgid "%(days)s Days"
+msgstr ""
+
+#: .\templates\tour\tour_detail.html:28
+#: .\templates\users\wishlist.html:111
+#: .\templates\users\wishlist.html:215
+msgid "OFF"
+msgstr ""
+
+#: .\templates\tour\tour_detail.html:44
+msgid "reviews"
+msgstr ""
+
+#: .\templates\tour\tour_detail.html:56
+msgid "Tour Overview"
+msgstr ""
+
+#: .\templates\tour\tour_detail.html:60
+msgid "Highlights"
+msgstr ""
+
+#: .\templates\tour\tour_detail.html:68
+msgid "No highlights available for this tour."
+msgstr ""
+
+#: .\templates\tour\tour_detail.html:77
+msgid "Guided Tour"
+msgstr ""
+
+#: .\templates\tour\tour_detail.html:85
+#: .\templates\tour\tour_list.html:76 .\tour\models.py:95
+msgid "Easy"
+msgstr ""
+
+#: .\templates\tour\tour_detail.html:87
+#: .\templates\tour\tour_list.html:77 .\tour\models.py:96
+msgid "Moderate"
+msgstr ""
+
+#: .\templates\tour\tour_detail.html:89
+#: .\templates\tour\tour_list.html:78 .\tour\models.py:97
+msgid "Challenging"
+msgstr ""
+
+#: .\templates\tour\tour_detail.html:97
+#: .\templates\tour\tour_detail.html:376
+msgid "people"
+msgstr ""
+
+#: .\templates\tour\tour_detail.html:104
+msgid "Min age"
+msgstr ""
+
+#: .\templates\tour\tour_detail.html:125
+msgid "Meals Included"
+msgstr ""
+
+#: .\templates\tour\tour_detail.html:163 .\tour\models.py:244
+msgid "Accommodation"
+msgstr ""
+
+#: .\templates\tour\tour_detail.html:171
+msgid "Detailed itinerary not available for this tour."
+msgstr ""
+
+#: .\templates\tour\tour_detail.html:178
+msgid "What's Included/Excluded"
+msgstr ""
+
+#: .\templates\tour\tour_detail.html:185
+msgid "Included"
+msgstr ""
+
+#: .\templates\tour\tour_detail.html:196
+msgid "Excluded"
+msgstr ""
+
+#: .\templates\tour\tour_detail.html:207
+msgid "Location & Map"
+msgstr ""
+
+#: .\templates\tour\tour_detail.html:218
+msgid "Map not available"
+msgstr ""
+
+#: .\templates\tour\tour_detail.html:281
+msgid "View all reviews"
+msgstr ""
+
+#: .\templates\tour\tour_detail.html:288
+msgid "No reviews yet for this tour."
+msgstr ""
+
+#: .\templates\tour\tour_detail.html:293
+msgid "Write a Review"
+msgstr ""
+
+#: .\templates\tour\tour_detail.html:308
+msgid "Your Review"
+msgstr ""
+
+#: .\templates\tour\tour_detail.html:324
+msgid "You Might Also Like"
+msgstr ""
+
+#: .\templates\tour\tour_detail.html:355
+msgid "Book This Tour"
+msgstr ""
+
+#: .\templates\tour\tour_detail.html:359
+#: .\templates\users\booking_list.html:17
+#: .\templates\users\dashboard.html:178 .\tour\models.py:111
+msgid "Price"
+msgstr ""
+
+#: .\templates\tour\tour_detail.html:370
+#: .\templates\tour\tour_list.html:37 .\templates\tour\tour_list.html:89
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1868
+msgid "Duration"
+msgstr ""
+
+#: .\templates\tour\tour_detail.html:375
+msgid "Group Size"
+msgstr ""
+
+#: .\templates\tour\tour_detail.html:381
+msgid "Select Date"
+msgstr ""
+
+#: .\templates\tour\tour_detail.html:387
+msgid "Only"
+msgstr ""
+
+#: .\templates\tour\tour_detail.html:387
+msgid "spots left"
+msgstr ""
+
+#: .\templates\tour\tour_detail.html:396
+msgid "Number of Participants"
+msgstr ""
+
+#: .\templates\tour\tour_detail.html:411
+msgid "Subtotal"
+msgstr ""
+
+#: .\templates\tour\tour_detail.html:417
+msgid "Discount"
+msgstr ""
+
+#: .\templates\tour\tour_detail.html:423
+msgid "Total"
+msgstr ""
+
+#: .\templates\tour\tour_detail.html:430
+#: .\templates\users\wishlist.html:192
+#: .\templates\users\wishlist.html:300
+msgid "Book Now"
+msgstr ""
+
+#: .\templates\tour\tour_detail.html:436
+msgid "Remove from Wishlist"
+msgstr ""
+
+#: .\templates\tour\tour_detail.html:438
+msgid "Add to Wishlist"
+msgstr ""
+
+#: .\templates\tour\tour_detail.html:444
+msgid "No payment required today"
+msgstr ""
+
+#: .\templates\tour\tour_detail.html:445
+msgid "Free cancellation up to 7 days before the tour"
+msgstr ""
+
+#: .\templates\tour\tour_detail.html:452 .\tour\models.py:228
+msgid "Tour Guide"
+msgstr ""
+
+#: .\templates\tour\tour_detail.html:464
+msgid "Professional Tour Guide"
+msgstr ""
+
+#: .\templates\tour\tour_detail.html:472
+msgid "Languages"
+msgstr ""
+
+#: .\templates\tour\tour_detail.html:484
+msgid "Need Help?"
+msgstr ""
+
+#: .\templates\tour\tour_detail.html:512
+msgid "Live Chat"
+msgstr ""
+
+#: .\templates\tour\tour_detail.html:513
+msgid "Available 24/7"
+msgstr ""
+
+#: .\templates\tour\tour_detail.html:525
+msgid "Find answers to common questions about this tour"
+msgstr ""
+
+#: .\templates\tour\tour_detail.html:548
+msgid "No FAQs available for this tour."
+msgstr ""
+
+#: .\templates\tour\tour_list.html:10
+msgid "Discover Amazing Tours"
+msgstr ""
+
+#: .\templates\tour\tour_list.html:13
+msgid ""
+"Explore our handpicked selection of tours and adventures around the world"
+msgstr ""
+
+#: .\templates\tour\tour_list.html:31
+msgid "Search destinations..."
+msgstr ""
+
+#: .\templates\tour\tour_list.html:39
+msgid "Any duration"
+msgstr ""
+
+#: .\templates\tour\tour_list.html:51
+msgid "Any price"
+msgstr ""
+
+#: .\templates\tour\tour_list.html:52
+msgid "Budget"
+msgstr ""
+
+#: .\templates\tour\tour_list.html:53
+msgid "Standard"
+msgstr ""
+
+#: .\templates\tour\tour_list.html:54
+msgid "Luxury"
+msgstr ""
+
+#: .\templates\tour\tour_list.html:64
+msgid "All categories"
+msgstr ""
+
+#: .\templates\tour\tour_list.html:73 .\tour\models.py:118
+msgid "Difficulty Level"
+msgstr ""
+
+#: .\templates\tour\tour_list.html:75
+msgid "Any difficulty"
+msgstr ""
+
+#: .\templates\tour\tour_list.html:87
+msgid "Price: Low to High"
+msgstr ""
+
+#: .\templates\tour\tour_list.html:88
+msgid "Price: High to Low"
+msgstr ""
+
+#: .\templates\tour\tour_list.html:142
+msgid "No tours found"
+msgstr ""
+
+#: .\templates\tour\tour_list.html:143
+msgid "We couldn't find any tours matching your criteria."
+msgstr ""
+
+#: .\templates\tour\tour_search.html:4
+msgid "Search Results"
+msgstr ""
+
+#: .\templates\tour\tour_search.html:10
+#, python-format
+msgid "Search Results for \"%(keyword)s\""
+msgstr ""
+
+#: .\templates\tour\tour_search.html:12
+msgid "All Tours"
+msgstr ""
+
+#: .\templates\tour\tour_search.html:20
+#: .\templates\tour\tour_search.html:33 .\tour\forms.py:9
+msgid "Search"
+msgstr ""
+
+#: .\templates\tour\tour_search.html:22
+msgid "Search tours, destinations..."
+msgstr ""
+
+#: .\templates\tour\tour_search.html:84
+msgid "No Tours Found"
+msgstr ""
+
+#: .\templates\tour\tour_search.html:85
+msgid ""
+"We couldn't find any tours matching your search criteria. Please try "
+"different keywords or browse all our tours."
+msgstr ""
+
+#: .\templates\tour\tour_search.html:87
+msgid "Browse All Tours"
+msgstr ""
+
+#: .\templates\users\booking_list.html:18
+#: .\templates\users\dashboard.html:222
+msgid "View"
+msgstr ""
+
+#: .\templates\users\booking_list.html:49
+msgid "You have no bookings yet."
+msgstr ""
+
+#: .\templates\users\dashboard.html:6
+msgid "User Dashboard"
+msgstr ""
+
+#: .\templates\users\dashboard.html:12 .\users\models.py:42
+msgid "Profile Picture"
+msgstr ""
+
+#: .\templates\users\dashboard.html:24
+#: .\templates\users\profile_update.html:4
+msgid "Edit Profile"
+msgstr ""
+
+#: .\templates\users\dashboard.html:27
+msgid "View All Bookings"
+msgstr ""
+
+#: .\templates\users\dashboard.html:36
+msgid "Upcoming Bookings"
+msgstr ""
+
+#: .\templates\users\dashboard.html:80
+#: .\templates\users\dashboard.html:142
+msgid "View all"
+msgstr ""
+
+#: .\templates\users\dashboard.html:88
+msgid "No upcoming bookings"
+msgstr ""
+
+#: .\templates\users\dashboard.html:90
+#: .\templates\users\dashboard.html:241
+msgid "Browse tours"
+msgstr ""
+
+#: .\templates\users\dashboard.html:100
+msgid "Completed Tours"
+msgstr ""
+
+#: .\templates\users\dashboard.html:131
+msgid "Write a review"
+msgstr ""
+
+#: .\templates\users\dashboard.html:150
+msgid "No completed tours yet"
+msgstr ""
+
+#: .\templates\users\dashboard.html:160
+msgid "Recent Activity"
+msgstr ""
+
+#: .\templates\users\dashboard.html:181
+msgid "Actions"
+msgstr ""
+
+#: .\templates\users\dashboard.html:239
+msgid "No activity yet"
+msgstr ""
+
+#: .\templates\users\dashboard_base.html:4
+#: .\templates\users\dashboard_base.html:8
+msgid "لوحة تحكم المستخدم"
+msgstr ""
+
+#: .\templates\users\dashboard_base.html:4
+msgid "مشروع السياحة"
+msgstr ""
+
+#: .\templates\users\dashboard_base.html:16
+msgid "مرحبًا، "
+msgstr ""
+
+#: .\templates\users\dashboard_base.html:28
+msgid "الحجوزات النشطة"
+msgstr ""
+
+#: .\templates\users\dashboard_base.html:40
+msgid "النقاط المكتسبة"
+msgstr ""
+
+#: .\templates\users\dashboard_base.html:52
+msgid "التقييمات"
+msgstr ""
+
+#: .\templates\users\dashboard_base.html:65
+msgid "الحجوزات القادمة"
+msgstr ""
+
+#: .\templates\users\dashboard_base.html:67
+#: .\templates\users\dashboard_base.html:119
+msgid "عرض الكل"
+msgstr ""
+
+#: .\templates\users\dashboard_base.html:94
+msgid "التفاصيل"
+msgstr ""
+
+#: .\templates\users\dashboard_base.html:106
+msgid "ليس لديك أي حجوزات قادمة"
+msgstr ""
+
+#: .\templates\users\dashboard_base.html:108
+msgid "استكشف الرحلات المتاحة"
+msgstr ""
+
+#: .\templates\users\dashboard_base.html:117
+msgid "أحدث الإشعارات"
+msgstr ""
+
+#: .\templates\users\dashboard_base.html:138
+msgid "جديد"
+msgstr ""
+
+#: .\templates\users\dashboard_base.html:150
+msgid "ليس لديك إشعارات جديدة"
+msgstr ""
+
+#: .\templates\users\dashboard_base.html:176
+msgid "الحالة النشطة"
+msgstr ""
+
+#: .\templates\users\dashboard_base.html:186
+msgid "مستوى العضوية"
+msgstr ""
+
+#: .\templates\users\dashboard_base.html:192
+msgid "تعديل الملف الشخصي"
+msgstr ""
+
+#: .\templates\users\dashboard_base.html:198
+msgid "القائمة الرئيسية"
+msgstr ""
+
+#: .\templates\users\dashboard_base.html:203
+msgid "الرئيسية"
+msgstr ""
+
+#: .\templates\users\dashboard_base.html:208
+msgid "حجوزاتي"
+msgstr ""
+
+#: .\templates\users\dashboard_base.html:213
+msgid "المدفوعات"
+msgstr ""
+
+#: .\templates\users\dashboard_base.html:218
+msgid "تقييماتي"
+msgstr ""
+
+#: .\templates\users\dashboard_base.html:224
+msgid "الإشعارات"
+msgstr ""
+
+#: .\templates\users\dashboard_base.html:236
+msgid "تغيير كلمة المرور"
+msgstr ""
+
+#: .\templates\users\dashboard_base.html:242
+msgid "تسجيل الخروج"
+msgstr ""
+
+#: .\templates\users\notification_list.html:14
+msgid "Mark all as read"
+msgstr ""
+
+#: .\templates\users\notification_list.html:39
+msgid "You have no notifications."
+msgstr ""
+
+#: .\templates\users\payment_list.html:4
+#: .\templates\users\payment_list.html:7
+msgid "Payment History"
+msgstr ""
+
+#: .\templates\users\payment_list.html:17
+msgid "Method"
+msgstr ""
+
+#: .\templates\users\payment_list.html:52
+msgid "You have no payment history yet."
+msgstr ""
+
+#: .\templates\users\profile_update.html:7
+msgid "Edit Your Profile"
+msgstr ""
+
+#: .\templates\users\profile_update.html:57
+msgid "Current profile picture"
+msgstr ""
+
+#: .\templates\users\profile_update.html:72
+msgid "Save Changes"
+msgstr ""
+
+#: .\templates\users\review_list.html:4
+#: .\templates\users\review_list.html:7
+msgid "My Reviews"
+msgstr ""
+
+#: .\templates\users\review_list.html:23
+msgid "Pending Approval"
+msgstr ""
+
+#: .\templates\users\review_list.html:44
+msgid "You haven't written any reviews yet."
+msgstr ""
+
+#: .\templates\users\wishlist.html:5 .\templates\users\wishlist.html:58
+msgid "My Wishlist"
+msgstr ""
+
+#: .\templates\users\wishlist.html:61
+msgid "Your collection of dream destinations and experiences"
+msgstr ""
+
+#: .\templates\users\wishlist.html:66 .\templates\users\wishlist.html:409
+msgid "tours saved"
+msgstr ""
+
+#: .\templates\users\wishlist.html:77
+msgid "Sort by:"
+msgstr ""
+
+#: .\templates\users\wishlist.html:79
+msgid "Date Added (Newest)"
+msgstr ""
+
+#: .\templates\users\wishlist.html:80
+msgid "Date Added (Oldest)"
+msgstr ""
+
+#: .\templates\users\wishlist.html:83
+msgid "Rating (Highest)"
+msgstr ""
+
+#: .\templates\users\wishlist.html:184
+#: .\templates\users\wishlist.html:291
+msgid "Added"
+msgstr ""
+
+#: .\templates\users\wishlist.html:313
+msgid "Your wishlist is empty"
+msgstr ""
+
+#: .\templates\users\wishlist.html:314
+msgid ""
+"Start exploring tours and save your favorites for later. Your dream "
+"destinations are just a click away!"
+msgstr ""
+
+#: .\templates\users\wishlist.html:409
+msgid "tour saved"
+msgstr ""
+
+#: .\tour\admin.py:208 .\tour\admin.py:770
+msgid "Wrong file format. Please upload a CSV file."
+msgstr ""
+
+#: .\tour\admin.py:212 .\tour\admin.py:774
+msgid "Wrong file format. Please upload an Excel file."
+msgstr ""
+
+#: .\tour\admin.py:249 .\tour\admin.py:843
+msgid "Import successful: "
+msgstr ""
+
+#: .\tour\admin.py:251 .\tour\admin.py:845
+msgid "Import completed, but no data was imported."
+msgstr ""
+
+#: .\tour\admin.py:256 .\tour\admin.py:850
+msgid "Errors occurred during import:"
+msgstr ""
+
+#: .\tour\admin.py:818
+msgid "Excel file must contain a 'Tours' sheet"
+msgstr ""
+
+#: .\tour\apps.py:7
+msgid "Tour Management"
+msgstr ""
+
+#: .\tour\forms.py:11
+msgid "Search tours..."
+msgstr ""
+
+#: .\tour\forms.py:26
+msgid "All Categories"
+msgstr ""
+
+#: .\tour\forms.py:31
+msgid "Min Price"
+msgstr ""
+
+#: .\tour\forms.py:37
+msgid "Max Price"
+msgstr ""
+
+#: .\tour\forms.py:43
+msgid "Max Duration (Days)"
+msgstr ""
+
+#: .\tour\forms.py:69 .\tour\forms.py:105
+msgid "Select file"
+msgstr ""
+
+#: .\tour\forms.py:70
+msgid "Upload a CSV or Excel file containing tour data with translations."
+msgstr ""
+
+#: .\tour\forms.py:74 .\tour\forms.py:110
+msgid "File format"
+msgstr ""
+
+#: .\tour\forms.py:80
+msgid "Create missing destinations"
+msgstr ""
+
+#: .\tour\forms.py:81
+msgid ""
+"If checked, destinations that don't exist will be created automatically."
+msgstr ""
+
+#: .\tour\forms.py:87
+msgid "Create missing categories"
+msgstr ""
+
+#: .\tour\forms.py:88
+msgid "If checked, categories that don't exist will be created automatically."
+msgstr ""
+
+#: .\tour\forms.py:94
+msgid "Update existing tours"
+msgstr ""
+
+#: .\tour\forms.py:95
+msgid ""
+"If checked, existing tours with the same name will be updated instead of "
+"creating duplicates."
+msgstr ""
+
+#: .\tour\forms.py:106
+msgid "Upload a CSV or Excel file containing category data."
+msgstr ""
+
+#: .\tour\forms.py:116
+msgid "Update existing categories"
+msgstr ""
+
+#: .\tour\forms.py:117
+msgid "If checked, existing categories with the same name will be updated."
+msgstr ""
+
+#: .\tour\models.py:12
+msgid "Destination Name"
+msgstr ""
+
+#: .\tour\models.py:13 .\tour\models.py:56 .\tour\models.py:102
+msgid "Slug"
+msgstr ""
+
+#: .\tour\models.py:15 .\tour\models.py:123
+msgid "Cover Image"
+msgstr ""
+
+#: .\tour\models.py:16
+msgid "Country"
+msgstr ""
+
+#: .\tour\models.py:17
+msgid "City"
+msgstr ""
+
+#: .\tour\models.py:18 .\tour\models.py:131
+msgid "Is Featured"
+msgstr ""
+
+#: .\tour\models.py:41 .\tour\models.py:60 .\tour\models.py:185
+#: .\venv\Lib\site-packages\django\db\models\fields\files.py:420
+msgid "Image"
+msgstr ""
+
+#: .\tour\models.py:43 .\tour\models.py:187
+msgid "Is Main Image"
+msgstr ""
+
+#: .\tour\models.py:46
+msgid "Destination Image"
+msgstr ""
+
+#: .\tour\models.py:47
+msgid "Destination Images"
+msgstr ""
+
+#: .\tour\models.py:55
+msgid "Category Name"
+msgstr ""
+
+#: .\tour\models.py:58 .\tour\models.py:80
+msgid "Icon Class"
+msgstr ""
+
+#: .\tour\models.py:59
+msgid "Font Awesome or other icon class"
+msgstr ""
+
+#: .\tour\models.py:79
+msgid "Activity Name"
+msgstr ""
+
+#: .\tour\models.py:84
+msgid "Activity"
+msgstr ""
+
+#: .\tour\models.py:85 .\tour\models.py:108
+msgid "Activities"
+msgstr ""
+
+#: .\tour\models.py:98
+msgid "Difficult"
+msgstr ""
+
+#: .\tour\models.py:101
+msgid "Tour Name"
+msgstr ""
+
+#: .\tour\models.py:104
+msgid "Short Description"
+msgstr ""
+
+#: .\tour\models.py:109
+msgid "Duration (Days)"
+msgstr ""
+
+#: .\tour\models.py:110
+msgid "Duration (Nights)"
+msgstr ""
+
+#: .\tour\models.py:112
+msgid "Discount Price"
+msgstr ""
+
+#: .\tour\models.py:115
+msgid "Currency"
+msgstr ""
+
+#: .\tour\models.py:116
+msgid "Maximum People"
+msgstr ""
+
+#: .\tour\models.py:117
+msgid "Minimum Age"
+msgstr ""
+
+#: .\tour\models.py:120
+msgid "Included Services"
+msgstr ""
+
+#: .\tour\models.py:121
+msgid "Excluded Services"
+msgstr ""
+
+#: .\tour\models.py:122
+msgid "Meeting Point"
+msgstr ""
+
+#: .\tour\models.py:124
+msgid "Highlight Video"
+msgstr ""
+
+#: .\tour\models.py:126
+msgid "Map Location"
+msgstr ""
+
+#: .\tour\models.py:127
+msgid "Latitude"
+msgstr ""
+
+#: .\tour\models.py:129
+msgid "Longitude"
+msgstr ""
+
+#: .\tour\models.py:135
+msgid "View Count"
+msgstr ""
+
+#: .\tour\models.py:190
+msgid "Tour Image"
+msgstr ""
+
+#: .\tour\models.py:191
+msgid "Tour Images"
+msgstr ""
+
+#: .\tour\models.py:203
+msgid "Available Seats"
+msgstr ""
+
+#: .\tour\models.py:207
+msgid "Tour Date"
+msgstr ""
+
+#: .\tour\models.py:208
+msgid "Tour Dates"
+msgstr ""
+
+#: .\tour\models.py:219 .\users\models.py:44
+msgid "Biography"
+msgstr ""
+
+#: .\tour\models.py:220
+msgid "Profile Image"
+msgstr ""
+
+#: .\tour\models.py:221
+msgid "Years of Experience"
+msgstr ""
+
+#: .\tour\models.py:222
+msgid "Languages Spoken"
+msgstr ""
+
+#: .\tour\models.py:223
+msgid "Specialities"
+msgstr ""
+
+#: .\tour\models.py:224
+msgid "Average Rating"
+msgstr ""
+
+#: .\tour\models.py:229
+msgid "Tour Guides"
+msgstr ""
+
+#: .\tour\models.py:239
+msgid "Day"
+msgstr ""
+
+#: .\tour\models.py:242
+msgid "Meals"
+msgstr ""
+
+#: .\tour\models.py:243
+msgid "E.g., Breakfast, Lunch, Dinner"
+msgstr ""
+
+#: .\tour\models.py:247
+msgid "Tour Itinerary"
+msgstr ""
+
+#: .\tour\models.py:248
+msgid "Tour Itineraries"
+msgstr ""
+
+#: .\tour\models.py:264
+msgid "Tour FAQ"
+msgstr ""
+
+#: .\tour\models.py:265
+msgid "Tour FAQs"
+msgstr ""
+
+#: .\tour\models.py:275
+msgid "Promo Code"
+msgstr ""
+
+#: .\tour\models.py:277
+msgid "Discount Percentage"
+msgstr ""
+
+#: .\tour\models.py:281
+msgid "Usage Limit"
+msgstr ""
+
+#: .\tour\models.py:282
+msgid "Current Usage"
+msgstr ""
+
+#: .\tour\models.py:287
+msgid "Promotions"
+msgstr ""
+
+#: .\tourism_project\settings.py:171
+msgid "Arabic"
+msgstr ""
+
+#: .\tourism_project\settings.py:172
+msgid "English"
+msgstr ""
+
+#: .\tourism_project\settings.py:173
+msgid "French"
+msgstr ""
+
+#: .\tourism_project\settings.py:174
+msgid "German"
+msgstr ""
+
+#: .\users\admin.py:18
+msgid "Personal info"
+msgstr ""
+
+#: .\users\admin.py:19
+msgid "Permissions"
+msgstr ""
+
+#: .\users\admin.py:20
+msgid "Important dates"
+msgstr ""
+
+#: .\users\apps.py:7
+msgid "User Management"
+msgstr ""
+
+#: .\users\forms.py:45
+msgid "First Name"
+msgstr ""
+
+#: .\users\forms.py:46
+msgid "Last Name"
+msgstr ""
+
+#: .\users\forms.py:52
+msgid "Passwords don't match"
+msgstr ""
+
+#: .\users\models.py:35
+msgid "username"
+msgstr ""
+
+#: .\users\models.py:41
+msgid "email address"
+msgstr ""
+
+#: .\users\models.py:43
+msgid "Phone Number"
+msgstr ""
+
+#: .\users\models.py:46
+msgid "Date of Birth"
+msgstr ""
+
+#: .\users\models.py:55
+msgid "Users"
+msgstr ""
+
+#: .\users\models.py:70
+msgid "Added At"
+msgstr ""
+
+#: .\users\models.py:73
+msgid "Wishlist Item"
+msgstr ""
+
+#: .\users\models.py:74
+msgid "Wishlist Items"
+msgstr ""
+
+#: .\users\views.py:38
+msgid "Your profile has been updated successfully."
+msgstr ""
+
+#: .\users\views.py:114
+msgid "Tour removed from your wishlist."
+msgstr ""
+
+#: .\users\views.py:118
+msgid "Tour added to your wishlist."
+msgstr ""
+
+#: .\venv\Lib\site-packages\ckeditor_uploader\forms.py:6
+msgid "Search files"
+msgstr ""
+
+#: .\venv\Lib\site-packages\ckeditor_uploader\templates\ckeditor\browse.html:5
+msgid "Select an image to embed"
+msgstr ""
+
+#: .\venv\Lib\site-packages\ckeditor_uploader\templates\ckeditor\browse.html:27
+msgid "Browse for the image you want, then click 'Embed Image' to continue..."
+msgstr ""
+
+#: .\venv\Lib\site-packages\ckeditor_uploader\templates\ckeditor\browse.html:29
+msgid ""
+"No images found. Upload images using the 'Image Button' dialog's 'Upload' "
+"tab."
+msgstr ""
+
+#: .\venv\Lib\site-packages\ckeditor_uploader\templates\ckeditor\browse.html:50
+msgid "Images in: "
+msgstr ""
+
+#: .\venv\Lib\site-packages\ckeditor_uploader\templates\ckeditor\browse.html:62
+#: .\venv\Lib\site-packages\ckeditor_uploader\templates\ckeditor\browse.html:80
+msgid "Embed Image"
+msgstr ""
+
+#: .\venv\Lib\site-packages\ckeditor_uploader\templates\ckeditor\browse.html:146
+msgid "Play Slideshow"
+msgstr ""
+
+#: .\venv\Lib\site-packages\ckeditor_uploader\templates\ckeditor\browse.html:147
+msgid "Pause Slideshow"
+msgstr ""
+
+#: .\venv\Lib\site-packages\ckeditor_uploader\templates\ckeditor\browse.html:148
+msgid "&lsaquo; Previous Photo"
+msgstr ""
+
+#: .\venv\Lib\site-packages\ckeditor_uploader\templates\ckeditor\browse.html:149
+msgid "Next Photo &rsaquo;"
+msgstr ""
+
+#: .\venv\Lib\site-packages\ckeditor_uploader\templates\ckeditor\browse.html:150
+msgid "Next &rsaquo;"
+msgstr ""
+
+#: .\venv\Lib\site-packages\ckeditor_uploader\templates\ckeditor\browse.html:151
+msgid "&lsaquo; Prev"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\contrib\messages\apps.py:16
+msgid "Messages"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\contrib\sitemaps\apps.py:8
+msgid "Site Maps"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\contrib\staticfiles\apps.py:9
+msgid "Static Files"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\contrib\syndication\apps.py:7
+msgid "Syndication"
+msgstr ""
+
+#. Translators: String used to replace omitted page numbers in elided page
+#. range generated by paginators, e.g. [1, 2, '…', 5, 6, 7, '…', 9, 10].
+#: .\venv\Lib\site-packages\django\core\paginator.py:30
+msgid "…"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\core\paginator.py:32
+msgid "That page number is not an integer"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\core\paginator.py:33
+msgid "That page number is less than 1"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\core\paginator.py:34
+msgid "That page contains no results"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\core\validators.py:22
+msgid "Enter a valid value."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\core\validators.py:70
+msgid "Enter a valid domain name."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\core\validators.py:153
+#: .\venv\Lib\site-packages\django\forms\fields.py:775
+msgid "Enter a valid URL."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\core\validators.py:200
+msgid "Enter a valid integer."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\core\validators.py:211
+msgid "Enter a valid email address."
+msgstr ""
+
+#. Translators: "letters" means latin letters: a-z and A-Z.
+#: .\venv\Lib\site-packages\django\core\validators.py:289
+msgid ""
+"Enter a valid “slug” consisting of letters, numbers, underscores or hyphens."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\core\validators.py:297
+msgid ""
+"Enter a valid “slug” consisting of Unicode letters, numbers, underscores, or "
+"hyphens."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\core\validators.py:309
+#: .\venv\Lib\site-packages\django\core\validators.py:318
+#: .\venv\Lib\site-packages\django\core\validators.py:332
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2220
+#, python-format
+msgid "Enter a valid %(protocol)s address."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\core\validators.py:311
+msgid "IPv4"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\core\validators.py:320
+#: .\venv\Lib\site-packages\django\utils\ipv6.py:43
+msgid "IPv6"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\core\validators.py:334
+msgid "IPv4 or IPv6"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\core\validators.py:375
+msgid "Enter only digits separated by commas."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\core\validators.py:381
+#, python-format
+msgid "Ensure this value is %(limit_value)s (it is %(show_value)s)."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\core\validators.py:416
+#, python-format
+msgid "Ensure this value is less than or equal to %(limit_value)s."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\core\validators.py:425
+#, python-format
+msgid "Ensure this value is greater than or equal to %(limit_value)s."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\core\validators.py:434
+#, python-format
+msgid "Ensure this value is a multiple of step size %(limit_value)s."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\core\validators.py:441
+#, python-format
+msgid ""
+"Ensure this value is a multiple of step size %(limit_value)s, starting from "
+"%(offset)s, e.g. %(offset)s, %(valid_value1)s, %(valid_value2)s, and so on."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\core\validators.py:473
+#, python-format
+msgid ""
+"Ensure this value has at least %(limit_value)d character (it has "
+"%(show_value)d)."
+msgid_plural ""
+"Ensure this value has at least %(limit_value)d characters (it has "
+"%(show_value)d)."
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\venv\Lib\site-packages\django\core\validators.py:491
+#, python-format
+msgid ""
+"Ensure this value has at most %(limit_value)d character (it has "
+"%(show_value)d)."
+msgid_plural ""
+"Ensure this value has at most %(limit_value)d characters (it has "
+"%(show_value)d)."
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\venv\Lib\site-packages\django\core\validators.py:514
+#: .\venv\Lib\site-packages\django\forms\fields.py:366
+#: .\venv\Lib\site-packages\django\forms\fields.py:405
+msgid "Enter a number."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\core\validators.py:516
+#, python-format
+msgid "Ensure that there are no more than %(max)s digit in total."
+msgid_plural "Ensure that there are no more than %(max)s digits in total."
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\venv\Lib\site-packages\django\core\validators.py:521
+#, python-format
+msgid "Ensure that there are no more than %(max)s decimal place."
+msgid_plural "Ensure that there are no more than %(max)s decimal places."
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\venv\Lib\site-packages\django\core\validators.py:526
+#, python-format
+msgid ""
+"Ensure that there are no more than %(max)s digit before the decimal point."
+msgid_plural ""
+"Ensure that there are no more than %(max)s digits before the decimal point."
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\venv\Lib\site-packages\django\core\validators.py:597
+#, python-format
+msgid ""
+"File extension “%(extension)s” is not allowed. Allowed extensions are: "
+"%(allowed_extensions)s."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\core\validators.py:659
+msgid "Null characters are not allowed."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\db\models\base.py:1602
+#, python-format
+msgid "%(model_name)s with this %(field_labels)s already exists."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\db\models\constraints.py:22
+#, python-format
+msgid "Constraint “%(name)s” is violated."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:134
+#, python-format
+msgid "Value %(value)r is not a valid choice."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:135
+msgid "This field cannot be null."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:136
+msgid "This field cannot be blank."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:137
+#, python-format
+msgid "%(model_name)s with this %(field_label)s already exists."
+msgstr ""
+
+#. Translators: The 'lookup_type' is one of 'date', 'year' or
+#. 'month'. Eg: "Title must be unique for pub_date year"
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:141
+#, python-format
+msgid ""
+"%(field_label)s must be unique for %(date_field_label)s %(lookup_type)s."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:180
+#, python-format
+msgid "Field of type: %(field_type)s"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1162
+#, python-format
+msgid "“%(value)s” value must be either True or False."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1163
+#, python-format
+msgid "“%(value)s” value must be either True, False, or None."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1165
+msgid "Boolean (Either True or False)"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1215
+#, python-format
+msgid "String (up to %(max_length)s)"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1217
+msgid "String (unlimited)"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1326
+msgid "Comma-separated integers"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1427
+#, python-format
+msgid ""
+"“%(value)s” value has an invalid date format. It must be in YYYY-MM-DD "
+"format."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1431
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1566
+#, python-format
+msgid ""
+"“%(value)s” value has the correct format (YYYY-MM-DD) but it is an invalid "
+"date."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1435
+msgid "Date (without time)"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1562
+#, python-format
+msgid ""
+"“%(value)s” value has an invalid format. It must be in YYYY-MM-DD "
+"HH:MM[:ss[.uuuuuu]][TZ] format."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1570
+#, python-format
+msgid ""
+"“%(value)s” value has the correct format (YYYY-MM-DD HH:MM[:ss[.uuuuuu]]"
+"[TZ]) but it is an invalid date/time."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1575
+msgid "Date (with time)"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1702
+#, python-format
+msgid "“%(value)s” value must be a decimal number."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1704
+msgid "Decimal number"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1864
+#, python-format
+msgid ""
+"“%(value)s” value has an invalid format. It must be in [DD] "
+"[[HH:]MM:]ss[.uuuuuu] format."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1920
+msgid "Email address"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1945
+msgid "File path"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2023
+#, python-format
+msgid "“%(value)s” value must be a float."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2025
+msgid "Floating point number"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2065
+#, python-format
+msgid "“%(value)s” value must be an integer."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2067
+msgid "Integer"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2163
+msgid "Big (8 byte) integer"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2180
+msgid "Small integer"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2188
+msgid "IPv4 address"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2219
+msgid "IP address"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2310
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2311
+#, python-format
+msgid "“%(value)s” value must be either None, True or False."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2313
+msgid "Boolean (Either True, False or None)"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2364
+msgid "Positive big integer"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2379
+msgid "Positive integer"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2394
+msgid "Positive small integer"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2410
+#, python-format
+msgid "Slug (up to %(max_length)s)"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2446
+msgid "Text"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2526
+#, python-format
+msgid ""
+"“%(value)s” value has an invalid format. It must be in HH:MM[:ss[.uuuuuu]] "
+"format."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2530
+#, python-format
+msgid ""
+"“%(value)s” value has the correct format (HH:MM[:ss[.uuuuuu]]) but it is an "
+"invalid time."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2534
+msgid "Time"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2642
+msgid "URL"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2666
+msgid "Raw binary data"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2731
+#, python-format
+msgid "“%(value)s” is not a valid UUID."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2733
+msgid "Universally unique identifier"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\db\models\fields\files.py:244
+msgid "File"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\db\models\fields\json.py:24
+msgid "A JSON object"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\db\models\fields\json.py:26
+msgid "Value must be valid JSON."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\db\models\fields\related.py:978
+#, python-format
+msgid "%(model)s instance with %(field)s %(value)r is not a valid choice."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\db\models\fields\related.py:981
+msgid "Foreign Key (type determined by related field)"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\db\models\fields\related.py:1275
+msgid "One-to-one relationship"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\db\models\fields\related.py:1332
+#, python-format
+msgid "%(from)s-%(to)s relationship"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\db\models\fields\related.py:1334
+#, python-format
+msgid "%(from)s-%(to)s relationships"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\db\models\fields\related.py:1382
+msgid "Many-to-many relationship"
+msgstr ""
+
+#. Translators: If found as last label character, these punctuation
+#. characters will prevent the default label_suffix to be appended to the label
+#: .\venv\Lib\site-packages\django\forms\boundfield.py:185
+msgid ":?.!"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\forms\fields.py:95
+msgid "This field is required."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\forms\fields.py:315
+msgid "Enter a whole number."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\forms\fields.py:486
+#: .\venv\Lib\site-packages\django\forms\fields.py:1267
+msgid "Enter a valid date."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\forms\fields.py:509
+#: .\venv\Lib\site-packages\django\forms\fields.py:1268
+msgid "Enter a valid time."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\forms\fields.py:536
+msgid "Enter a valid date/time."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\forms\fields.py:570
+msgid "Enter a valid duration."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\forms\fields.py:571
+#, python-brace-format
+msgid "The number of days must be between {min_days} and {max_days}."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\forms\fields.py:640
+msgid "No file was submitted. Check the encoding type on the form."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\forms\fields.py:641
+msgid "No file was submitted."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\forms\fields.py:642
+msgid "The submitted file is empty."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\forms\fields.py:644
+#, python-format
+msgid "Ensure this filename has at most %(max)d character (it has %(length)d)."
+msgid_plural ""
+"Ensure this filename has at most %(max)d characters (it has %(length)d)."
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\venv\Lib\site-packages\django\forms\fields.py:649
+msgid "Please either submit a file or check the clear checkbox, not both."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\forms\fields.py:717
+msgid ""
+"Upload a valid image. The file you uploaded was either not an image or a "
+"corrupted image."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\forms\fields.py:889
+#: .\venv\Lib\site-packages\django\forms\fields.py:975
+#: .\venv\Lib\site-packages\django\forms\models.py:1592
+#, python-format
+msgid "Select a valid choice. %(value)s is not one of the available choices."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\forms\fields.py:977
+#: .\venv\Lib\site-packages\django\forms\fields.py:1096
+#: .\venv\Lib\site-packages\django\forms\models.py:1590
+msgid "Enter a list of values."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\forms\fields.py:1097
+msgid "Enter a complete value."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\forms\fields.py:1339
+msgid "Enter a valid UUID."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\forms\fields.py:1369
+msgid "Enter a valid JSON."
+msgstr ""
+
+#. Translators: This is the default suffix added to form field labels
+#: .\venv\Lib\site-packages\django\forms\forms.py:97
+msgid ":"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\forms\forms.py:239
+#, python-format
+msgid "(Hidden field %(name)s) %(error)s"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\forms\formsets.py:61
+#, python-format
+msgid ""
+"ManagementForm data is missing or has been tampered with. Missing fields: "
+"%(field_names)s. You may need to file a bug report if the issue persists."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\forms\formsets.py:65
+#, python-format
+msgid "Please submit at most %(num)d form."
+msgid_plural "Please submit at most %(num)d forms."
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\venv\Lib\site-packages\django\forms\formsets.py:70
+#, python-format
+msgid "Please submit at least %(num)d form."
+msgid_plural "Please submit at least %(num)d forms."
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\venv\Lib\site-packages\django\forms\formsets.py:484
+#: .\venv\Lib\site-packages\django\forms\formsets.py:491
+msgid "Order"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\forms\formsets.py:499
+msgid "Delete"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\forms\models.py:901
+#, python-format
+msgid "Please correct the duplicate data for %(field)s."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\forms\models.py:906
+#, python-format
+msgid "Please correct the duplicate data for %(field)s, which must be unique."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\forms\models.py:913
+#, python-format
+msgid ""
+"Please correct the duplicate data for %(field_name)s which must be unique "
+"for the %(lookup)s in %(date_field)s."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\forms\models.py:922
+msgid "Please correct the duplicate values below."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\forms\models.py:1359
+msgid "The inline value did not match the parent instance."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\forms\models.py:1450
+msgid "Select a valid choice. That choice is not one of the available choices."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\forms\models.py:1594
+#, python-format
+msgid "“%(pk)s” is not a valid value."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\forms\utils.py:229
+#, python-format
+msgid ""
+"%(datetime)s couldn’t be interpreted in time zone %(current_timezone)s; it "
+"may be ambiguous or it may not exist."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\forms\widgets.py:527
+msgid "Clear"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\forms\widgets.py:528
+msgid "Currently"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\forms\widgets.py:529
+msgid "Change"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\forms\widgets.py:866
+msgid "Unknown"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\forms\widgets.py:867
+msgid "Yes"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\forms\widgets.py:868
+msgid "No"
+msgstr ""
+
+#. Translators: Please do not add spaces around commas.
+#: .\venv\Lib\site-packages\django\template\defaultfilters.py:873
+msgid "yes,no,maybe"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\template\defaultfilters.py:903
+#: .\venv\Lib\site-packages\django\template\defaultfilters.py:920
+#, python-format
+msgid "%(size)d byte"
+msgid_plural "%(size)d bytes"
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\venv\Lib\site-packages\django\template\defaultfilters.py:922
+#, python-format
+msgid "%s KB"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\template\defaultfilters.py:924
+#, python-format
+msgid "%s MB"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\template\defaultfilters.py:926
+#, python-format
+msgid "%s GB"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\template\defaultfilters.py:928
+#, python-format
+msgid "%s TB"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\template\defaultfilters.py:930
+#, python-format
+msgid "%s PB"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dateformat.py:74
+msgid "p.m."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dateformat.py:75
+msgid "a.m."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dateformat.py:80
+msgid "PM"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dateformat.py:81
+msgid "AM"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dateformat.py:153
+msgid "midnight"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dateformat.py:155
+msgid "noon"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:7
+msgid "Monday"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:8
+msgid "Tuesday"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:9
+msgid "Wednesday"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:10
+msgid "Thursday"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:11
+msgid "Friday"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:12
+msgid "Saturday"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:13
+msgid "Sunday"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:16
+msgid "Mon"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:17
+msgid "Tue"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:18
+msgid "Wed"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:19
+msgid "Thu"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:20
+msgid "Fri"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:21
+msgid "Sat"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:22
+msgid "Sun"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:25
+msgid "January"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:26
+msgid "February"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:27
+msgid "March"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:28
+msgid "April"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:29
+msgid "May"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:30
+msgid "June"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:31
+msgid "July"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:32
+msgid "August"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:33
+msgid "September"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:34
+msgid "October"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:35
+msgid "November"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:36
+msgid "December"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:39
+msgid "jan"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:40
+msgid "feb"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:41
+msgid "mar"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:42
+msgid "apr"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:43
+msgid "may"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:44
+msgid "jun"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:45
+msgid "jul"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:46
+msgid "aug"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:47
+msgid "sep"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:48
+msgid "oct"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:49
+msgid "nov"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:50
+msgid "dec"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:53
+msgctxt "abbrev. month"
+msgid "Jan."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:54
+msgctxt "abbrev. month"
+msgid "Feb."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:55
+msgctxt "abbrev. month"
+msgid "March"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:56
+msgctxt "abbrev. month"
+msgid "April"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:57
+msgctxt "abbrev. month"
+msgid "May"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:58
+msgctxt "abbrev. month"
+msgid "June"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:59
+msgctxt "abbrev. month"
+msgid "July"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:60
+msgctxt "abbrev. month"
+msgid "Aug."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:61
+msgctxt "abbrev. month"
+msgid "Sept."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:62
+msgctxt "abbrev. month"
+msgid "Oct."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:63
+msgctxt "abbrev. month"
+msgid "Nov."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:64
+msgctxt "abbrev. month"
+msgid "Dec."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:67
+msgctxt "alt. month"
+msgid "January"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:68
+msgctxt "alt. month"
+msgid "February"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:69
+msgctxt "alt. month"
+msgid "March"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:70
+msgctxt "alt. month"
+msgid "April"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:71
+msgctxt "alt. month"
+msgid "May"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:72
+msgctxt "alt. month"
+msgid "June"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:73
+msgctxt "alt. month"
+msgid "July"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:74
+msgctxt "alt. month"
+msgid "August"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:75
+msgctxt "alt. month"
+msgid "September"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:76
+msgctxt "alt. month"
+msgid "October"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:77
+msgctxt "alt. month"
+msgid "November"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:78
+msgctxt "alt. month"
+msgid "December"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\ipv6.py:20
+msgid "This is not a valid IPv6 address."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\text.py:67
+#, python-format
+msgctxt "String to return when truncating text"
+msgid "%(truncated_text)s…"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\text.py:278
+msgid "or"
+msgstr ""
+
+#. Translators: This string is used as a separator between list elements
+#: .\venv\Lib\site-packages\django\utils\text.py:297
+#: .\venv\Lib\site-packages\django\utils\timesince.py:135
+msgid ", "
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\timesince.py:8
+#, python-format
+msgid "%(num)d year"
+msgid_plural "%(num)d years"
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\venv\Lib\site-packages\django\utils\timesince.py:9
+#, python-format
+msgid "%(num)d month"
+msgid_plural "%(num)d months"
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\venv\Lib\site-packages\django\utils\timesince.py:10
+#, python-format
+msgid "%(num)d week"
+msgid_plural "%(num)d weeks"
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\venv\Lib\site-packages\django\utils\timesince.py:11
+#, python-format
+msgid "%(num)d day"
+msgid_plural "%(num)d days"
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\venv\Lib\site-packages\django\utils\timesince.py:12
+#, python-format
+msgid "%(num)d hour"
+msgid_plural "%(num)d hours"
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\venv\Lib\site-packages\django\utils\timesince.py:13
+#, python-format
+msgid "%(num)d minute"
+msgid_plural "%(num)d minutes"
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\venv\Lib\site-packages\django\views\csrf.py:29
+msgid "Forbidden"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\views\csrf.py:30
+msgid "CSRF verification failed. Request aborted."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\views\csrf.py:34
+msgid ""
+"You are seeing this message because this HTTPS site requires a “Referer "
+"header” to be sent by your web browser, but none was sent. This header is "
+"required for security reasons, to ensure that your browser is not being "
+"hijacked by third parties."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\views\csrf.py:40
+msgid ""
+"If you have configured your browser to disable “Referer” headers, please re-"
+"enable them, at least for this site, or for HTTPS connections, or for “same-"
+"origin” requests."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\views\csrf.py:45
+msgid ""
+"If you are using the <meta name=\"referrer\" content=\"no-referrer\"> tag or "
+"including the “Referrer-Policy: no-referrer” header, please remove them. The "
+"CSRF protection requires the “Referer” header to do strict referer checking. "
+"If you’re concerned about privacy, use alternatives like <a "
+"rel=\"noreferrer\" …> for links to third-party sites."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\views\csrf.py:54
+msgid ""
+"You are seeing this message because this site requires a CSRF cookie when "
+"submitting forms. This cookie is required for security reasons, to ensure "
+"that your browser is not being hijacked by third parties."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\views\csrf.py:60
+msgid ""
+"If you have configured your browser to disable cookies, please re-enable "
+"them, at least for this site, or for “same-origin” requests."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\views\csrf.py:66
+msgid "More information is available with DEBUG=True."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\views\generic\dates.py:44
+msgid "No year specified"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\views\generic\dates.py:64
+#: .\venv\Lib\site-packages\django\views\generic\dates.py:115
+#: .\venv\Lib\site-packages\django\views\generic\dates.py:214
+msgid "Date out of range"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\views\generic\dates.py:94
+msgid "No month specified"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\views\generic\dates.py:147
+msgid "No day specified"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\views\generic\dates.py:194
+msgid "No week specified"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\views\generic\dates.py:353
+#: .\venv\Lib\site-packages\django\views\generic\dates.py:384
+#, python-format
+msgid "No %(verbose_name_plural)s available"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\views\generic\dates.py:680
+#, python-format
+msgid ""
+"Future %(verbose_name_plural)s not available because "
+"%(class_name)s.allow_future is False."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\views\generic\dates.py:720
+#, python-format
+msgid "Invalid date string “%(datestr)s” given format “%(format)s”"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\views\generic\detail.py:56
+#, python-format
+msgid "No %(verbose_name)s found matching the query"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\views\generic\list.py:70
+msgid "Page is not “last”, nor can it be converted to an int."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\views\generic\list.py:77
+#, python-format
+msgid "Invalid page (%(page_number)s): %(message)s"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\views\generic\list.py:173
+#, python-format
+msgid "Empty list and “%(class_name)s.allow_empty” is False."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\views\static.py:49
+msgid "Directory indexes are not allowed here."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\views\static.py:51
+#, python-format
+msgid "“%(path)s” does not exist"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\views\static.py:68
+#: .\venv\Lib\site-packages\django\views\templates\directory_index.html:8
+#: .\venv\Lib\site-packages\django\views\templates\directory_index.html:11
+#, python-format
+msgid "Index of %(directory)s"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\views\templates\default_urlconf.html:7
+#: .\venv\Lib\site-packages\django\views\templates\default_urlconf.html:204
+msgid "The install worked successfully! Congratulations!"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\views\templates\default_urlconf.html:206
+#, python-format
+msgid ""
+"View <a href=\"https://docs.djangoproject.com/en/%(version)s/releases/\" "
+"target=\"_blank\" rel=\"noopener\">release notes</a> for Django %(version)s"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\views\templates\default_urlconf.html:208
+#, python-format
+msgid ""
+"You are seeing this page because <a href=\"https://docs.djangoproject.com/en/"
+"%(version)s/ref/settings/#debug\" target=\"_blank\" "
+"rel=\"noopener\">DEBUG=True</a> is in your settings file and you have not "
+"configured any URLs."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\views\templates\default_urlconf.html:217
+msgid "Django Documentation"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\views\templates\default_urlconf.html:218
+msgid "Topics, references, &amp; how-to’s"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\views\templates\default_urlconf.html:226
+msgid "Tutorial: A Polling App"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\views\templates\default_urlconf.html:227
+msgid "Get started with Django"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\views\templates\default_urlconf.html:235
+msgid "Django Community"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\views\templates\default_urlconf.html:236
+msgid "Connect, get help, or contribute"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django_ckeditor_5\permissions.py:18
+msgid "You do not have permission to upload files."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django_ckeditor_5\permissions.py:25
+msgid "You must be logged in to upload files."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django_ckeditor_5\validators.py:17
+#, python-format
+msgid "File should be at most %(max_size)s MB."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django_ckeditor_5\views.py:41
+msgid "Invalid form data"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django_ckeditor_5\widgets.py:43
+msgid "Check the correct settings.CKEDITOR_5_CONFIGS "
+msgstr ""
+
+#: .\venv\Lib\site-packages\modeltranslation\widgets.py:32
+msgid "None"
+msgstr ""
