@@ -18,7 +18,7 @@ SECRET_KEY = 'vi5wnnw9i!b#avi5+d=cesi%62$iv#_8$zdesx=p+jawfsf0tg'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['tours.pythonanywhere.com', 'localhost']
+ALLOWED_HOSTS = ['*']
 
 
 
