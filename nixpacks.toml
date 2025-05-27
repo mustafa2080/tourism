@@ -16,5 +16,10 @@ cmds = [
     "chmod +x start.sh"
 ]
 
+[phases.deploy]
+cmds = [
+    "python3 manage.py migrate --noinput"
+]
+
 [start]
 cmd = "bash start.sh"
