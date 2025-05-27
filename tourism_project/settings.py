@@ -47,40 +47,44 @@ def Csv():
         return value.split(',') if value else []
     return converter
 
-# Define a function to parse database URLs
-def parse_db_url(url):
-    """
-    Parse a database URL into Django database connection settings.
-    Similar to dj-database-url's parse function.
-    """
-    if not url:
+# Import dj_database_url for proper database URL parsing
+try:
+    import dj_database_url
+except ImportError:
+    # Fallback if dj_database_url is not available
+    def parse_db_url(url):
+        """
+        Parse a database URL into Django database connection settings.
+        Simple fallback for dj-database-url's parse function.
+        """
+        if not url:
+            return None
+
+        # Simple parsing for common database URLs
+        if url.startswith('sqlite:///'):
+            return {
+                'ENGINE': 'django.db.backends.sqlite3',
+                'NAME': url[10:],
+            }
+        elif url.startswith('postgres://') or url.startswith('postgresql://'):
+            # Very basic parsing - in production, use the actual dj-database-url package
+            return {
+                'ENGINE': 'django.db.backends.postgresql',
+                'NAME': 'postgres',  # Default values
+                'USER': 'postgres',
+                'PASSWORD': '',
+                'HOST': 'localhost',
+                'PORT': '5432',
+            }
+
         return None
 
-    # Simple parsing for common database URLs
-    if url.startswith('sqlite:///'):
-        return {
-            'ENGINE': 'django.db.backends.sqlite3',
-            'NAME': url[10:],
-        }
-    elif url.startswith('postgres://') or url.startswith('postgresql://'):
-        # Very basic parsing - in production, use the actual dj-database-url package
-        return {
-            'ENGINE': 'django.db.backends.postgresql',
-            'NAME': 'postgres',  # Default values
-            'USER': 'postgres',
-            'PASSWORD': '',
-            'HOST': 'localhost',
-            'PORT': '5432',
-        }
+    # Create a simple dj_database_url module-like object
+    class DatabaseURL:
+        def parse(self, url):
+            return parse_db_url(url)
 
-    return None
-
-# Create a simple dj_database_url module-like object
-class DatabaseURL:
-    def parse(self, url):
-        return parse_db_url(url)
-
-dj_database_url = DatabaseURL()
+    dj_database_url = DatabaseURL()
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent

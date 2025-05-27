@@ -1,2 +1,2 @@
-web: gunicorn tourism_project.wsgi --log-file -
-release: python manage.py migrate && python manage.py collectstatic --noinput
+web: gunicorn tourism_project.wsgi:application --bind 0.0.0.0:$PORT --log-file -
+release: python manage.py migrate --noinput && python manage.py collectstatic --noinput
