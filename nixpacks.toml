@@ -1,17 +1,19 @@
+# Nixpacks configuration for Railway deployment
 [phases.setup]
-nixPkgs = ["nodejs", "python312"]
+nixPkgs = ["nodejs", "python312", "python312Packages.pip"]
 
 [phases.install]
 cmds = [
     "npm install",
-    "pip install -r requirements.txt"
+    "pip3 install --upgrade pip",
+    "pip3 install -r requirements.txt"
 ]
 
 [phases.build]
 cmds = [
     "npm run build",
-    "python manage.py collectstatic --noinput"
+    "python3 manage.py collectstatic --noinput"
 ]
 
 [start]
-cmd = "gunicorn tourism_project.wsgi --log-file -"
+cmd = "gunicorn tourism_project.wsgi:application --bind 0.0.0.0:$PORT"
