@@ -100,14 +100,21 @@ ALLOWED_HOSTS = config('ALLOWED_HOSTS', default='localhost,127.0.0.1', cast=Csv(
 
 # Add Railway domain if RAILWAY_STATIC_URL is present
 if 'RAILWAY_STATIC_URL' in os.environ:
-    ALLOWED_HOSTS.append(os.environ.get('RAILWAY_STATIC_URL').replace('https://', '').replace('http://', ''))
+    railway_url = os.environ.get('RAILWAY_STATIC_URL')
+    if railway_url:
+        # Extract domain from URL
+        domain = railway_url.replace('https://', '').replace('http://', '').split('/')[0]
+        ALLOWED_HOSTS.append(domain)
 
-# Add Railway domain pattern
-if not DEBUG:
-    ALLOWED_HOSTS.extend([
-        '.railway.app',
-        '.up.railway.app'
-    ])
+# Add Railway domain patterns
+ALLOWED_HOSTS.extend([
+    '.railway.app',
+    '.up.railway.app'
+])
+
+# Add specific Railway domain from environment
+if 'RAILWAY_PUBLIC_DOMAIN' in os.environ:
+    ALLOWED_HOSTS.append(os.environ.get('RAILWAY_PUBLIC_DOMAIN'))
 
 # Application definition
 INSTALLED_APPS = [
@@ -150,36 +157,18 @@ MIDDLEWARE = [
     'whitenoise.middleware.WhiteNoiseMiddleware',
     # Session middleware must come before CSRF middleware
     'django.contrib.sessions.middleware.SessionMiddleware',
-    # Cache middleware - temporarily disabled for initial deployment
-    # 'django.middleware.cache.UpdateCacheMiddleware',
     'django.middleware.locale.LocaleMiddleware',
     'corsheaders.middleware.CorsMiddleware',
     'django.middleware.common.CommonMiddleware',
-    # 'django.middleware.cache.FetchFromCacheMiddleware',
-    # Compression middleware
-    'django.middleware.gzip.GZipMiddleware',
-    'django.middleware.http.ConditionalGetMiddleware',
-    # CSRF Debug middleware - add before CsrfViewMiddleware
-    'core.middleware.csrf_middleware.CSRFDebugMiddleware',
-    # Security middleware
+    # CSRF middleware
     'django.middleware.csrf.CsrfViewMiddleware',
-    # CSRF Fix middleware - add after CsrfViewMiddleware
-    'core.middleware.csrf_middleware.CSRFFixMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'allauth.account.middleware.AccountMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    # Performance middleware removed
-    # API performance middleware - temporarily disabled for initial deployment
-    # 'core.middleware.APIPerformanceMiddleware',
-    # 'core.middleware.APIRequestThrottleMiddleware',
-    # 'core.middleware.APIResponseCompressionMiddleware',
-    # Login speedup middleware
-    # 'core.middleware.LoginSpeedupMiddleware',
-    # Analytics middleware - temporarily disabled for initial deployment
-    # 'analytics.middleware.AnalyticsMiddleware',
-    # Error handling middleware
-    # 'core.middleware.SocialAccountErrorMiddleware',
+    # Compression middleware
+    'django.middleware.gzip.GZipMiddleware',
+    'django.middleware.http.ConditionalGetMiddleware',
 ]
 
 ROOT_URLCONF = 'tourism_project.urls'
@@ -511,6 +500,8 @@ SECURE_BROWSER_XSS_FILTER = True
 SECURE_CONTENT_TYPE_NOSNIFF = True
 X_FRAME_OPTIONS = 'DENY'
 SESSION_COOKIE_HTTPONLY = True
+
+# CSRF settings
 CSRF_COOKIE_HTTPONLY = False  # Allow JavaScript access
 CSRF_USE_SESSIONS = False  # Use cookies instead of sessions
 CSRF_COOKIE_SAMESITE = 'Lax'
@@ -518,7 +509,29 @@ SESSION_COOKIE_SAMESITE = 'Lax'
 CSRF_FAILURE_VIEW = 'core.views.csrf_failure'  # Custom CSRF failure view
 CSRF_COOKIE_NAME = 'csrftoken'
 CSRF_HEADER_NAME = 'HTTP_X_CSRFTOKEN'
-CSRF_TRUSTED_ORIGINS = [SITE_URL]
+
+# CSRF Trusted Origins - start with SITE_URL
+CSRF_TRUSTED_ORIGINS = [SITE_URL] if SITE_URL else []
+
+# Add Railway domains to trusted origins
+CSRF_TRUSTED_ORIGINS.extend([
+    'https://*.railway.app',
+    'https://*.up.railway.app'
+])
+
+# Add specific Railway domain from environment
+if 'RAILWAY_PUBLIC_DOMAIN' in os.environ:
+    domain = os.environ.get('RAILWAY_PUBLIC_DOMAIN')
+    CSRF_TRUSTED_ORIGINS.extend([
+        f'https://{domain}',
+        f'http://{domain}'
+    ])
+
+# Add Railway static URL domain
+if 'RAILWAY_STATIC_URL' in os.environ:
+    railway_url = os.environ.get('RAILWAY_STATIC_URL')
+    if railway_url:
+        CSRF_TRUSTED_ORIGINS.append(railway_url)
 
 # Production security settings
 if not DEBUG:
@@ -529,22 +542,15 @@ if not DEBUG:
     SECURE_HSTS_PRELOAD = True
     SESSION_COOKIE_SECURE = True
     CSRF_COOKIE_SECURE = True
-
-    # Add Railway domains to trusted origins
-    CSRF_TRUSTED_ORIGINS.extend([
-        'https://*.railway.app',
-        'https://*.up.railway.app'
-    ])
-
-# Security settings
-# Enable security settings in production, disable in development
-SECURE_SSL_REDIRECT = not DEBUG
-SESSION_COOKIE_SECURE = not DEBUG
-CSRF_COOKIE_SECURE = not DEBUG
-SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https') if not DEBUG else None
-SECURE_HSTS_SECONDS = 31536000 if not DEBUG else 0  # 1 year
-SECURE_HSTS_INCLUDE_SUBDOMAINS = not DEBUG
-SECURE_HSTS_PRELOAD = not DEBUG
+else:
+    # Development settings
+    SECURE_SSL_REDIRECT = False
+    SESSION_COOKIE_SECURE = False
+    CSRF_COOKIE_SECURE = False
+    SECURE_PROXY_SSL_HEADER = None
+    SECURE_HSTS_SECONDS = 0
+    SECURE_HSTS_INCLUDE_SUBDOMAINS = False
+    SECURE_HSTS_PRELOAD = False
 
 # Jazzmin Settings
 JAZZMIN_SETTINGS = {

@@ -3,7 +3,7 @@ Production settings for Railway deployment
 """
 import os
 import dj_database_url
-from .settings import *
+from tourism_project.settings import *
 
 # Override settings for production
 DEBUG = False
@@ -22,8 +22,34 @@ X_FRAME_OPTIONS = 'DENY'
 SESSION_COOKIE_SECURE = True
 CSRF_COOKIE_SECURE = True
 
-# Allowed hosts from environment variable
-ALLOWED_HOSTS = os.environ.get('ALLOWED_HOSTS', '').split(',')
+# Allowed hosts - get from environment or use Railway defaults
+ALLOWED_HOSTS = []
+if 'ALLOWED_HOSTS' in os.environ:
+    ALLOWED_HOSTS.extend(os.environ.get('ALLOWED_HOSTS', '').split(','))
+
+# Add Railway domains
+ALLOWED_HOSTS.extend([
+    '.railway.app',
+    '.up.railway.app'
+])
+
+# Add specific Railway domain from environment
+if 'RAILWAY_PUBLIC_DOMAIN' in os.environ:
+    ALLOWED_HOSTS.append(os.environ.get('RAILWAY_PUBLIC_DOMAIN'))
+
+# CSRF Trusted Origins for Railway
+CSRF_TRUSTED_ORIGINS = [
+    'https://*.railway.app',
+    'https://*.up.railway.app'
+]
+
+# Add specific Railway domain
+if 'RAILWAY_PUBLIC_DOMAIN' in os.environ:
+    domain = os.environ.get('RAILWAY_PUBLIC_DOMAIN')
+    CSRF_TRUSTED_ORIGINS.extend([
+        f'https://{domain}',
+        f'http://{domain}'
+    ])
 
 # Database configuration for Railway
 if 'DATABASE_URL' in os.environ:

@@ -1,2 +1,2 @@
 web: bash start.sh
-release: python manage.py migrate --noinput && python manage.py collectstatic --noinput
+release: DJANGO_SETTINGS_MODULE=railway_settings python manage.py migrate --noinput && DJANGO_SETTINGS_MODULE=railway_settings python manage.py collectstatic --noinput
