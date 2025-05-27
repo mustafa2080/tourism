@@ -12,8 +12,9 @@ cmds = [
 [phases.build]
 cmds = [
     "npm run build",
-    "python3 manage.py collectstatic --noinput"
+    "python3 manage.py collectstatic --noinput",
+    "chmod +x start.sh"
 ]
 
 [start]
-cmd = "gunicorn tourism_project.wsgi:application --bind 0.0.0.0:$PORT"
+cmd = "bash start.sh"

@@ -41,8 +41,11 @@ RUN npm run build
 # Collect static files
 RUN python manage.py collectstatic --noinput
 
+# Make start script executable
+RUN chmod +x start.sh
+
 # Expose port
 EXPOSE $PORT
 
 # Run the application
-CMD gunicorn tourism_project.wsgi:application --bind 0.0.0.0:$PORT --workers 2
+CMD ["bash", "start.sh"]
