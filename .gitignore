@@ -23,7 +23,7 @@ wheels/
 # Django
 *.log
 local_settings.py
-db.sqlite3
+# db.sqlite3  # Temporarily allow SQLite for Railway deployment
 db.sqlite3-journal
 # Don't ignore media folder for Railway deployment
 # media

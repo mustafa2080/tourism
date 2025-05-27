@@ -206,17 +206,17 @@ TEMPLATES = [
 WSGI_APPLICATION = 'tourism_project.wsgi.application'
 
 # Database configuration
-# Use PostgreSQL in production (Railway), SQLite in development
+# Use SQLite for now (temporary setup)
 DATABASE_URL = config('DATABASE_URL', default=None)
 
-if DATABASE_URL:
-    # Production database (Railway PostgreSQL)
+if DATABASE_URL and 'postgres' in DATABASE_URL:
+    # Production database (Railway PostgreSQL) - only if explicitly PostgreSQL
     DATABASES = {
         'default': dj_database_url.parse(DATABASE_URL)
     }
     print("Using PostgreSQL database from DATABASE_URL")
 else:
-    # Development database (SQLite)
+    # SQLite database (development and temporary production)
     DATABASES = {
         'default': {
             'ENGINE': 'django.db.backends.sqlite3',

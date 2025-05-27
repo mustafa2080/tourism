@@ -8,9 +8,9 @@
 *.log
 logs/
 
-# Database files
-db.sqlite3
-*.db
+# Database files (commented out for temporary SQLite deployment)
+# db.sqlite3
+# *.db
 
 # Python cache
 __pycache__/
